@@ -72,13 +72,13 @@
                             <a href="{{ url(getDashboardURL()) }}"
                                class="btn btn-primary mb-3 mb-lg-0">{{__('messages.dashboard')}}</a>
                             @else
-                                <a href="{{ route('register') }}" type="button"
+                                {{-- <a href="{{ route('register') }}" type="button"
                                    class="btn btn-secondary  me-3 mb-3 mb-lg-0">
-                                    {{__('messages.front_landing.sign_up')}}</a>
+                                    {{__('messages.front_landing.sign_up')}}</a> --}}
                                 <a href="{{ route('login') }}"
                                    class="btn btn-primary mb-3 mb-lg-0">{{__('messages.common.sign_in')}}</a>
                             @endif
-                            
+
 
 
                         </div>
@@ -129,7 +129,7 @@
                                     @endforeach
                                 </div>
                             </div>
-                           
+
                             <div class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('news','news-details*') ? 'active' : '' }}"
                                    href="{{ route('landing.news') }}">{{__('messages.news.news')}}</a>
@@ -152,7 +152,7 @@
                                     <a href="{{ route('login') }}"
                                        class="btn btn-primary mb-3 mb-lg-0">{{__('messages.common.sign_in')}}</a>
                                 @endif
-                                    
+
 
                             </div>
                         </div>

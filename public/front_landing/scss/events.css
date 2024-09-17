@@ -21,15 +21,15 @@
     bottom: 0;
     width: auto;
     height: 3px;
-    color: #009e74 !important;
-    background-color: #009e74 !important;
+    color: #51246d !important;
+    background-color: #51246d !important;
     left: 0;
     right: 0;
     display: none;
 }
 
 .upcoming-events-section .nav-tabs .item a:focus {
-    color: #009e74 !important;
+    color: #51246d !important;
 }
 
 .upcoming-events-section .nav-tabs .item a.active::after {
@@ -40,7 +40,7 @@
 .upcoming-events-section .nav-tabs .item a.active,
 .upcoming-events-section .nav-tabs .item a:active,
 .upcoming-events-section .nav-tabs .item a:hover {
-    color: #009e74 !important;
+    color: #51246d !important;
 }
 
 .upcoming-events-section .nav-tabs .item a:focus ::after,
@@ -54,7 +54,7 @@
 /*.upcoming-events-section .nav-tabs .item:focus a,*/
 /*.upcoming-events-section .nav-tabs .item:active a,*/
 /*.upcoming-events-section .nav-tabs .item:hover a {*/
-/*    color: #009e74 !important;*/
+/*    color: #51246d !important;*/
 /*}*/
 
 /*.upcoming-events-section .nav-tabs .item.active a::after,*/
@@ -138,7 +138,7 @@
 }
 
 .upcoming-events-section .card .small-btn:hover {
-    background-color: #009e74;
+    background-color: #51246d;
     color: #fff;
 }
 
@@ -161,8 +161,8 @@
     position: absolute;
     width: 15px;
     height: 3px;
-    color: #009e74;
-    background-color: #009e74;
+    color: #51246d;
+    background-color: #51246d;
     top: 12px;
     left: 12px;
 }

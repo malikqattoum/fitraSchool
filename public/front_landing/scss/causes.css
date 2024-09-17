@@ -3,7 +3,7 @@
 }
 
 .trending-causes-section .nav-tabs .nav-item .active {
-    color: #009e74
+    color: #51246d
 }
 
 .trending-causes-section .nav-tabs .nav-item .nav-link {
@@ -25,20 +25,20 @@
     bottom: 0;
     width: auto;
     height: 3px;
-    color: #009e74;
-    background-color: #009e74;
+    color: #51246d;
+    background-color: #51246d;
     left: 0;
     right: 0;
     display: none
 }
 
 .trending-causes-section .nav-tabs .nav-item .active {
-    color: #009e74 !important;
+    color: #51246d !important;
     background-color: transparent !important
 }
 
 .trending-causes-section .nav-tabs .nav-item .active a {
-    color: #009e74
+    color: #51246d
 }
 
 .trending-causes-section .nav-tabs .nav-item .active::after {

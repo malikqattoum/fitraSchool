@@ -41,7 +41,7 @@
     width: 60px;
     height: 60px !important;
     border-radius: 50% !important;
-    background: conic-gradient(#009e74 var(--progress), #adb5bd 0%);
+    background: conic-gradient(#51246d var(--progress), #adb5bd 0%);
     font-size: 0;
     animation: 1.8s ease-out turn_in reverse;
 
@@ -184,11 +184,11 @@ footer .footer-right .email-box input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #009e74;
+    color: #51246d;
     width: 40px;
     max-width: 40px;
     height: 40px;
-    background-color: rgba(0, 158, 116, 0.1607843137);
+    background-color: rgba(115,43,145, 0.1607843137);
     border-radius: 50px;
 }
 .input-group .form-control {
@@ -214,7 +214,7 @@ footer .footer-right .email-box input::placeholder {
     left: 11px;
     top: -26px;
     font-size: 11px;
-    background-color: #009e74;
+    background-color: #51246d;
     color: #fff;
     border-radius: 5px;
     padding: 1px 3px;
@@ -229,11 +229,11 @@ footer .footer-right .email-box input::placeholder {
     left: 6%;
     margin-left: -5px;
     border-width: 5px 5px 0;
-    border-top-color: #009e74;
+    border-top-color: #51246d;
 }
 .time-count-section .tooltip-progressbar .progress-tooltip .progress-bar {
     border-radius: 10px;
-    background-color: #009e74;
+    background-color: #51246d;
     height: 6px;
     width: 7%;
 }
@@ -257,7 +257,7 @@ footer .footer-right .email-box input::placeholder {
     top: 0;
     left:0;
     color: #fff;
-    background-color: #009e74;
+    background-color: #51246d;
     padding: 5px;
     border-radius: 0px 0px 4px 0px;
     display: inline-block;
@@ -266,23 +266,23 @@ footer .footer-right .email-box input::placeholder {
     cursor: pointer;
     font-size: 11px;
     color: #fff;
-    background-color: #009e74;
+    background-color: #51246d;
     padding: 3px 5px;
     border-radius: 4px;
     margin-right: 3px;
     margin-bottom: 3px;
 }
 .select-gift-section .select-gift .btn-transparent {
-    border: 1px solid #009e74;
+    border: 1px solid #51246d;
     background-color: rgba(0, 0, 0, 0);
-    color: #009e74;
+    color: #51246d;
 }
 .select-gift-section .select-gift .btn-transparent:hover,
 .select-gift-section .select-gift .btn-transparent:active,
 .select-gift-section .select-gift .btn-transparent:focus,
 .select-gift-section .select-gift .btn-transparent.active {
-    border: 1px solid #009e74;
-    background-color: #009e74;
+    border: 1px solid #51246d;
+    background-color: #51246d;
     color: #fff;
 }
 

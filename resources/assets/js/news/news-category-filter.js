@@ -5,7 +5,7 @@ listen('click', '.news-category-filter', function (event) {
     let CategoryId = $(event.currentTarget).data('id')
     $('.news-category-filter').removeClass('active')
     $('.news-tags-filter').removeClass('active')
-    $(event.currentTarget).find('span').css('color','#009e74')
+    $(event.currentTarget).find('span').css('color','#51246d')
     $(event.currentTarget).addClass('active')
     window.livewire.emit('changeFilter', 'newsCategory', CategoryId)
 })

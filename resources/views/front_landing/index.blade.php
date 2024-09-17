@@ -288,7 +288,7 @@ $brands = brands();
         <!-- end about-section -->
 
         <!-- start count-section -->
-        <section class="count-section bg-primary py-4">
+        {{-- <section class="count-section bg-primary py-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-6 text-white text-center py-4">
@@ -317,7 +317,7 @@ $brands = brands();
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end count-section -->
 
         <!-- start video-section -->

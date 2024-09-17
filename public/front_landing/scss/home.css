@@ -135,7 +135,7 @@
 
 .about-section .home-rectangle-shape {
     height: 40px;
-    background-color: #009e74;
+    background-color: #51246d;
     display: block;
     width: calc(100% - 100px);
     border-top-left-radius: 10px;
@@ -211,7 +211,7 @@
 .circle-small .progress {
     fill: none;
     stroke-width: 5px;
-    stroke: #009e74;
+    stroke: #51246d;
     stroke-linecap: round;
     stroke-dasharray: 232.36;
     transform: rotate(-90deg);

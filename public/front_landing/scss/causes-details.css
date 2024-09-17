@@ -25,15 +25,15 @@
     bottom: 0;
     width: auto;
     height: 3px;
-    color: #009e74;
-    background-color: #009e74;
+    color: #51246d;
+    background-color: #51246d;
     left: 0;
     right: 0;
     display: none
 }
 
 .cause-tab .nav .nav-item .nav-link.active {
-    color: #009e74 !important;
+    color: #51246d !important;
     background-color: transparent !important
 }
 
@@ -147,7 +147,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    background-color: #009e74;
+    background-color: #51246d;
     border-radius: 10px;
 }
 @media (max-width: 1199px) {
