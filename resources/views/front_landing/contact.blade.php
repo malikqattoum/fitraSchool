@@ -43,7 +43,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-lg-0 mb-sm-5 mb-4">
+                    {{-- <div class="col-lg-4 col-md-6 mb-lg-0 mb-sm-5 mb-4">
                         <div class="d-flex  align-items-center bg-light rounded-10 p-30 h-100">
                             <div class="icon me-4 ps-xl-3">
                                 <i class="fa-solid fa-phone text-primary"></i>
@@ -54,7 +54,7 @@
                                    class="text-dark fs-16 fw-5">{{ $settings['phone'] }}</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-4 col-md-6 ">
                         <div class="d-flex  align-items-center bg-light rounded-10 p-30 h-100">
                             <div class="icon me-4 ps-xl-3">

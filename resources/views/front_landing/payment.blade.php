@@ -36,24 +36,24 @@
                                 <div class="tags d-flex flex-wrap pb-1 give-donation-amount donate-amount-buttons">
                                     @if($campaign->currency != 'inr')
                                         <div class="tag bg-light rounded-10  mb-3 ">
-                                            <span class="single_amount currency prefilled-amount">20</span>
+                                            <span class="single_amount currency prefilled-amount">100</span>
                                         </div>
                                     @endif
                                         <div class="tag bg-light rounded-10  mb-3">
-                                            <span class="single_amount currency prefilled-amount">40</span>
+                                            <span class="single_amount currency prefilled-amount">500</span>
                                         </div>
                                         <div class="tag bg-light rounded-10  mb-3 ">
-                                            <span class="single_amount currency prefilled-amount">60</span>
+                                            <span class="single_amount currency prefilled-amount">1000</span>
                                         </div>
                                         <div class="tag bg-light rounded-10  mb-3 ">
-                                            <span class="single_amount currency prefilled-amount">80</span>
+                                            <span class="single_amount currency prefilled-amount">2000</span>
                                         </div>
                                         <div class="tag bg-light rounded-10  mb-3 ">
-                                            <span class="single_amount currency prefilled-amount">100</span>
+                                            <span class="single_amount currency prefilled-amount">5000</span>
                                         </div>
-                                        <div class="tag bg-light rounded-10  mb-3 ">
+                                        {{-- <div class="tag bg-light rounded-10  mb-3 ">
                                             <span class="single_amount currency prefilled-amount">120</span>
-                                        </div>
+                                        </div> --}}
                                 </div>
                                 @endif
 

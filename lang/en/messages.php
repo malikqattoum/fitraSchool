@@ -568,7 +568,12 @@ return [
         'gift_as_donation_details' => 'Gift as donation details',
         'select_gift_while_doing_donation' => 'Select gift while doing donation',
         'selected_gift' => 'Selected gift',
-
+        'overview' => 'Overview',
+        'mission_vision' => 'Mission and Vision',
+        'admissions' => 'Admissions',
+        'school_life' => 'School Life',
+        'program' => 'Program',
+        'donation_campaigns' => 'Donation Campaigns',
     ],
 
     'payout_setting' => [

@@ -32,7 +32,7 @@ $brands = brands();
                                                 <h2 class="fs-1 mb-0 fw-6">{{ $slider->title_2 }}</h2>
                                             </div>
                                         </div>
-                                        <div class="col-lg-7 col-md-5 mt-3 mt-md-4">
+                                        {{-- <div class="col-lg-7 col-md-5 mt-3 mt-md-4">
                                             <div class="video-play-btn m-lg-auto ms-md-auto">
                                                 <button type="button"
                                                         class="play-video popup-video fs-4 border-0 slider-popup-video"
@@ -40,7 +40,7 @@ $brands = brands();
                                                     <i class="fas fa-play text-primary"></i>
                                                 </button>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ $brands = brands();
         <!-- end hero-section -->
 
         <!-- start category-section -->
-        <section class="category-section pt-60 pb-50">
+        {{-- <section class="category-section pt-60 pb-50">
             <div class="container">
                 <div class="row justify-content-center">
                     @foreach($data['campaignsCategories'] as $category)
@@ -108,14 +108,74 @@ $brands = brands();
                     @endforeach
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end category-section -->
+
+        <!-- start overview section -->
+        <section class="trending-causes-section bg-gray py-60">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.overview')}}</h2>
+                    <h3 class="fs-2 fw-6 mb-60">{{__("messages.front_landing.mission_vision")}}</h3>
+                    <p>At Fitra School, our vision is to nurture and develop a generation of confident, capable, and morally grounded Muslim leaders who excel in all areas of life, not only academically successful but also deeply rooted in their Islamic identity.
+                        By blending subjects and developing core competencies, Fitra School seeks to empower students to thrive not only in academic settings but also as leaders and change-makers in their community and their Ummah at large, while upholding the principles of Islam at their core.</p>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+        <!-- end overview section -->
+
+        <!-- start Admissions-section -->
+        <section class="about-section pb-60 pt-60">
+            <div class="container">
+                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.admissions')}}</h2>
+                <div class="row">
+                    <ul class="list-group">
+                        <li class="list-group-item">Tuition fees. $500/month</li>
+                        <li class="list-group-item">Provide links for 2024 January enrolment waitlist</li>
+                        <li class="list-group-item">contact form for inquiries.</li>
+                      </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end Admissions-section -->
+
+        <!-- start school life-section -->
+        <section class="about-section bg-gray py-60">
+            <div class="container">
+                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.school_life')}}</h2>
+                <div class="row">
+                    <ul class="list-group">
+                        <li class="list-group-item">Daily schedule (9:00 AM - 3:30 PM).</li>
+                        <li class="list-group-item">Overview of facilities and classrooms.</li>
+                        <li class="list-group-item">School events, trips, calendar</li>
+                      </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end school life-section -->
+
+        <!-- start program-section -->
+        <section class="about-section pb-60 pt-60">
+            <div class="container">
+                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.program')}}</h2>
+                <div class="row">
+                    <ul class="list-group">
+                        <li class="list-group-item">Year 2024-2025</li>
+                        <li class="list-group-item">Grades from JK to Gr.4</li>
+                      </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end school life-section -->
 
         <!-- start trending-causes-section -->
         <section class="trending-causes-section bg-gray py-60">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.trending_causes')}}</h2>
+                    <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.donation_campaigns')}}</h2>
                     <h3 class="fs-2 fw-6 mb-60">{{__("messages.front_landing.it's_about_impact_good_history")}}</h3>
                 </div>
                 <div class="row">
@@ -321,7 +381,7 @@ $brands = brands();
         <!-- end count-section -->
 
         <!-- start video-section -->
-        <section class="video-section pt-60">
+        {{-- <section class="video-section pt-60">
             <div class="container">
                 <div class="video-bg-img">
                     <div class="row position-relative">
@@ -359,11 +419,11 @@ $brands = brands();
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end video-section -->
 
         <!-- start why-choose-section -->
-        <section class="why-choose-section pt-60">
+        {{-- <section class="why-choose-section pt-60">
             <div class="container">
                 <div class="text-center">
                     <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.why_choose_us')}}</h2>
@@ -399,11 +459,75 @@ $brands = brands();
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end why-chooses-section -->
 
+        <!-- start events section -->
+        <section class="events-section pb-60">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.insights')}}</h2>
+                    <h3 class="fs-2 fw-6 mb-60">{{__('messages.event.events')}}</h3>
+                </div>
+                <div class="row">
+                    @foreach($data['events'] as $event)
+                        @if($event->status == App\Models\Event::PUBLISHED)
+                            <div class="col-xl-4 col-lg-6 col-12 mb-2">
+                                <div class="card h-100">
+                                    <div class="positon-relative">
+                                        <div class="card-img">
+                                            <a href="{{ route('landing.event.detail',$event->slug) }}">
+                                                <img src="{{ !empty($event->image_url) ? $event->image_url : asset('front_landing/images/events-1.png') }}"
+                                                    class="card-img-top object-fit-cover" alt="card">
+                                            </a>
+                                        </div>
+                                        <div class="small-btn d-flex flex-column justify-content-center align-items-center">
+                                            <span class="fs-26 fw-6 ">{{ Carbon\Carbon::parse($event->event_date)->format('d') }}</span>
+                                            <span class="fs-14 fw-5 "> {{ Carbon\Carbon::parse($event->event_date)->format('M') }}
+                                                {{ Carbon\Carbon::parse($event->event_date)->format('Y') }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title mb-2 d-flex flex-wrap justify-content-between align-items-center ">
+                                            <div class="pe-sm-0">
+                                                <h4 class="fs-20 fw-6 text-dark"><a class="text-dark"
+                                                                                    href="{{ route('landing.event.detail',$event->slug) }}">{{ $event->title }}</a>
+                                                </h4>
+                                                <div class="mb-2">
+                                                    <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                                    <span class="fs-16 fw-5 text-primary">{{ $event->venue }}</span>
+                                                </div>
+                                            </div>
+
+                                            @if($event->event_date >= \Carbon\Carbon::now()->format('Y-m-d'))
+                                                <div class="button">
+                                                    <a type="button" class="btn btn-gray bookSeatBtn" data-bs-toggle="modal"
+                                                    data-bs-target="#bookSeatModalShow"
+                                                    data-bs-whatever="@mdo"
+                                                    data-id="{{ $event->id }}">{{__('messages.front_landing.book_your_seat')}}</a>
+                                                </div>
+                                            @else
+                                                <p class="text-danger">Event already expired.</p>
+                                            @endif
+                                            @include('front_landing.book_seat')
+
+                                        </div>
+                                        <p class="text-dark fs-16 fw-5">
+                                            {{ strlen( $event->description ) > 100 ? substr($event->description,0, 200).'.....': $event->description }}
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+            </div>
+        </section>
+        <!-- end events section -->
+
         <!-- start news-feeds-section -->
-        <section class="news-feed-section pb-60">
+        {{-- <section class="news-feed-section pb-60">
             <div class="container">
                 <div class="text-center">
                     <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.insights')}}</h2>
@@ -442,7 +566,7 @@ $brands = brands();
                     @endforeach
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end news-feeds-section -->
 
         <!-- start our-team-section -->

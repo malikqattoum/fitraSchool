@@ -254,7 +254,7 @@ class LandingController extends AppBaseController
         if(in_array($campaign->status ,[Campaign::STATUS_BLOCKED,Campaign::STATUS_FINISHED])){
             return redirect(route('landing.home'));
         }
-        
+
         $contactUs = ContactUs::pluck('value', 'key')->toArray();
 
         $campaign = $campaign->load('campaignCategory');

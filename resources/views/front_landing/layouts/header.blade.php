@@ -30,11 +30,11 @@
                                 <a class="nav-link {{ Request::is('about-us') ? 'active' : ''}} fw-5 fs-14"
                                    href="{{ route('landing.about') }}">{{__('messages.front_landing.about')}}</a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link {{ Request::is('causes','c/*') ? 'active' : '' }} fw-5  fs-14"
                                    href="{{ route('landing.causes') }}">{{__('messages.front_landing.causes')}}</a>
-                            </li>
-                            <li class="nav-item">
+                            </li> --}}
+                            {{-- <li class="nav-item">
                                 <a href="#"
                                    class="nav-link fw-5  fs-14 {{ Request::is('faqs','events','teams','event-details/*','page*') ? 'active' : '' }}">{{__('messages.pages')}}</a>
                                 <ul class="dropdown-nav ps-0">
@@ -52,15 +52,19 @@
                                             </li>
                                         @endif
                                     @endforeach
-                                    <li><a href="{{ route('landing.team')}}"
-                                           class="fs-14 fw-5 {{ Request::is('teams') ? 'active' : '' }}">{{__('messages.front_landing.team')}}</a>
-                                    </li>
+
                                 </ul>
+                            </li> --}}
+                            <li class="nav-item"><a href="{{ route('landing.team')}}"
+                                class="nav-link  fw-5  fs-14 {{ Request::is('teams') ? 'active' : '' }}">{{__('messages.front_landing.team')}}</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item"><a href="{{ route('landing.event') }}"
+                                class="nav-link  fw-5  fs-14 {{ Request::is('events','event-details/*') ? 'active' : '' }}">{{__('messages.events.events')}}</a>
+                            </li>
+                            {{-- <li class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('news','news-details*') ? 'active' : '' }}"
                                    href="{{ route('landing.news') }}">{{__('messages.news.news')}}</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link  fw-5  fs-14 {{ Request::is('contact-us') ? 'active' : '' }}"
                                    href="{{ route('landing.contact') }}">{{__('messages.contact_us.contact_us')}}</a>
@@ -104,21 +108,19 @@
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('about-us') ? 'active' : '' }}"
                                    href="{{ route('landing.about') }}">{{__('messages.front_landing.about')}}</a>
                             </div>
-                            <div class="nav-item">
+                            {{-- <div class="nav-item">
                                 <a class="nav-link fw-5  fs-14 {{ Request::is('causes','c/*') ? 'active' : '' }}"
                                    href="{{ route('landing.causes') }}">{{__('messages.front_landing.causes')}}</a>
-                            </div>
+                            </div> --}}
                             <div class="set">
                                 <a class="nav-link fw-5  fs-14 {{ Request::is('faqs','events','page*','event-details/*') ? 'active-menu' : '' }}"
                                    href="#">{{__('messages.pages')}}</a>
                                 <a href="#" class="p-0"><i class="fa fa-plus"></i></a>
                                 <div class="content">
-                                    <li><a href="{{ route('landing.faqs') }}"
+                                    {{-- <li><a href="{{ route('landing.faqs') }}"
                                            class="fs-14 fw-5 {{ Request::is('faqs') ? 'active' : '' }}">{{__('messages.faqs.faqs')}}</a>
-                                    </li>
-                                    <li><a href="{{ route('landing.event') }}"
-                                           class="fs-14 fw-5 {{ Request::is('events','event-details/*') ? 'active' : '' }}">{{__('messages.events.events')}}</a>
-                                    </li>
+                                    </li> --}}
+
                                     @foreach ( $pages as $page)
                                         @if($page->is_active)
                                             <li>
@@ -130,10 +132,13 @@
                                 </div>
                             </div>
 
-                            <div class="nav-item">
+                            {{-- <div class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('news','news-details*') ? 'active' : '' }}"
                                    href="{{ route('landing.news') }}">{{__('messages.news.news')}}</a>
-                            </div>
+                            </div> --}}
+                            <li><a href="{{ route('landing.event') }}"
+                                class="fs-14 fw-5 {{ Request::is('events','event-details/*') ? 'active' : '' }}">{{__('messages.events.events')}}</a>
+                            </li>
                             <div class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('teams') ? 'active' : '' }}"
                                    href="{{ route('landing.team') }}">{{__('messages.front_landing.team')}}</a>
