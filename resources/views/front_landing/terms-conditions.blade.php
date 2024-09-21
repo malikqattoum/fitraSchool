@@ -11,7 +11,7 @@
                 <div class="container">
                     <div class="row ">
                         <div class="col-md-7 parallelogram-shape">
-                            <div class="text-white inner-text position-relative pe-xl-5">
+                            <div class="text-responsive inner-text position-relative pe-xl-5">
                                 <h2 class="fs-1 mb-md-0 fw-6">{{ __('messages.common.terms_and_conditions') }}</h2>
                             </div>
                         </div>

@@ -11,7 +11,7 @@
                 <div class="container">
                     <div class="row ">
                         <div class="col-lg-6 col-md-7 parallelogram-shape">
-                            <div class="text-white inner-text position-relative">
+                            <div class="text-responsive inner-text position-relative">
                                 <p class="fs-18 fw-5 mb-md-3 pb-lg-2 mb-2">{{__('messages.front_landing.our_mission_food_education_medicine')}}</p>
                                 <h2 class="fs-1 mb-md-0 fw-6">{{ $event->title }}</h2>
                             </div>
@@ -63,7 +63,7 @@
                                 </div>
                                 <a class="fs-16 fw-5 text-dark mb-0">{{__('messages.front_landing.available_seats')}}</a>
                             </div>
-                           
+
                             @if($event->event_date >= \Carbon\Carbon::now()->format('Y-m-d'))
                             <div class="button">
                                 <a type="button" class="btn btn-primary w-100  bookSeatBtn" data-bs-toggle="modal"

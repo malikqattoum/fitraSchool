@@ -14,7 +14,7 @@
                 <div class="container">
                     <div class="row ">
                         <div class="col-lg-6 col-md-7 parallelogram-shape">
-                            <div class="text-white inner-text position-relative">
+                            <div class="text-responsive inner-text position-relative">
                                 <p class="fs-18 fw-5 mb-md-3 pb-lg-2 mb-2">{{ $contactUs['menu_title'] }}</p>
                                 <h2 class="fs-1 mb-md-0 fw-6">{{__('messages.contact_us.contact_us')}}</h2>
                             </div>
