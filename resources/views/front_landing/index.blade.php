@@ -27,7 +27,7 @@ $brands = brands();
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-5 col-md-7 parallelogram-shape">
-                                            <div class="text-primary inner-text position-relative">
+                                            <div class="inner-text position-relative text-responsive">
                                                 <p class="fs-18 fw-5">{{ $slider->title_1 }}</p>
                                                 <h2 class="fs-1 mb-0 fw-6">{{ $slider->title_2 }}</h2>
                                             </div>

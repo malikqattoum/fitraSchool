@@ -9105,6 +9105,17 @@ fieldset:disabled .btn {
     color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-responsive {
+    color: white; /* Default for mobile */
+}
+
+@media (min-width: 992px) {
+    .text-responsive {
+        color: var(--bs-primary); /* Bootstrap primary color for desktop */
+    }
+}
+
+
 .text-secondary {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
