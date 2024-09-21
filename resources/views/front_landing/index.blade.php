@@ -209,7 +209,7 @@ $brands = brands();
                     <ul class="list-group">
                         <li class="list-group-item">Tuition fees. $500/month</li>
                         <li class="list-group-item">Registration link for 2024-2025 <a href="https://form.jotform.com/242304365892257" target="_blank" class="btn btn-primary">Register</a></li>
-                        <li class="list-group-item">Provide links for 2024 January enrolment waitlist.</li>
+                        <li class="list-group-item">Provide links for 2024 January enrolment waitlist.</li>
                       </ul>
                 </div>
             </div>
