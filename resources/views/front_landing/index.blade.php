@@ -27,7 +27,7 @@ $brands = brands();
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-5 col-md-7 parallelogram-shape">
-                                            <div class="text-white inner-text position-relative">
+                                            <div class="text-primary inner-text position-relative">
                                                 <p class="fs-18 fw-5">{{ $slider->title_1 }}</p>
                                                 <h2 class="fs-1 mb-0 fw-6">{{ $slider->title_2 }}</h2>
                                             </div>
@@ -127,6 +127,80 @@ $brands = brands();
         </section>
         <!-- end overview section -->
 
+        <!-- start about-section -->
+        <section class="about-section pb-60 pt-60">
+            <div class="container">
+                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.about_us.about_us')}}</h2>
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-7 col-lg-8">
+                        <div class="about-left">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="about-1">
+                                        <img src="{{$data['aboutUs']['image_1'] ? : asset('front_landing/images/about-1.png')}}"
+                                                class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="about-content-box bg-primary ">
+                                        <div class="about-content d-flex flex-column align-items-center justify-content-center ">
+                                            <h2 class="number-big text-white fs-1 fw-6 counter"
+                                                data-countto="{{ $data['aboutUs']['years_of_exp'] }}"
+                                                data-duration="3000">
+                                            </h2>
+                                            <p class="mb-0 text-white fs-14 fw-5">{{__('messages.about_us.years_of_exp')}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-md-flex align-items-center">
+                                    <div class="about-2">
+                                        <img src="{{$data['aboutUs']['image_2'] ? : asset('front_landing/images/about-2.png')}}"
+                                                class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-5 col-lg-4 mt-lg-0 mt-sm-5 mt-4">
+                        <div class="about-right">
+                            <h2 class="text-dark fw-6 mb-3 pb-1">{{ $data['aboutUs']['title'] }}</h2>
+                            <p class="text-dark fs-16 fw-5 mb-4 pb-lg-3">{{ $data['aboutUs']['short_description'] }}.</p>
+                            <ul>
+                                <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_1'] }}</li>
+                                <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_2'] }}</li>
+                                <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_3'] }}</li>
+                                <li class="text-dark fs-16 fw-5 mb-2">{{$data['aboutUs']['point_4']}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about-section -->
+
+        <!-- start Principal’s Message-section -->
+        <section class="about-section pb-60 pt-60">
+            <div class="container">
+                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.principals_message')}}</h2>
+                <div class="row">
+                    <p>
+                        <pre>
+                            Assalamu Alaikum,
+                            Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child.
+                            As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals.
+                            This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life (khilafa on earth).
+                            Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam.
+                            We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.
+                            I am honored to work with a passionate and dedicated team that shares this vision.
+                            We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.
+
+                            Reem Yousef
+                            Principal, Fitra School
+                        </pre>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end Admissions-section -->
+
         <!-- start Admissions-section -->
         <section class="about-section pb-60 pt-60">
             <div class="container">
@@ -134,8 +208,8 @@ $brands = brands();
                 <div class="row">
                     <ul class="list-group">
                         <li class="list-group-item">Tuition fees. $500/month</li>
-                        <li class="list-group-item">Provide links for 2024 January enrolment waitlist</li>
-                        <li class="list-group-item">contact form for inquiries.</li>
+                        <li class="list-group-item">Registration link for 2024-2025 <a href="https://form.jotform.com/242304365892257" target="_blank" class="btn btn-primary">Register</a></li>
+                        <li class="list-group-item">Provide links for 2024 January enrolment waitlist.</li>
                       </ul>
                 </div>
             </div>
@@ -164,8 +238,9 @@ $brands = brands();
                 <div class="row">
                     <ul class="list-group">
                         <li class="list-group-item">Year 2024-2025</li>
+                        <li class="list-group-item">Daily schedule (9:00 AM - 3:30 PM).</li>
                         <li class="list-group-item">Grades from JK to Gr.4</li>
-                      </ul>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -297,55 +372,6 @@ $brands = brands();
             </div>
         </section>
         <!-- end trending-causes-section -->
-
-        <!-- start about-section -->
-        <section class="about-section pb-60 pt-60">
-            <div class="container">
-                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.about_us.about_us')}}</h2>
-                <div class="row">
-                    <div class="col-xxl-6 col-xl-7 col-lg-8">
-                        <div class="about-left">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="about-1">
-                                        <img src="{{$data['aboutUs']['image_1'] ? : asset('front_landing/images/about-1.png')}}"
-                                             class="w-100 h-100 object-fit-cover">
-                                    </div>
-                                    <div class="about-content-box bg-primary ">
-                                        <div class="about-content d-flex flex-column align-items-center justify-content-center ">
-                                            <h2 class="number-big text-white fs-1 fw-6 counter"
-                                                data-countto="{{ $data['aboutUs']['years_of_exp'] }}"
-                                                data-duration="3000">
-                                            </h2>
-                                            <p class="mb-0 text-white fs-14 fw-5">{{__('messages.about_us.years_of_exp')}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 d-md-flex align-items-center">
-                                    <div class="about-2">
-                                        <img src="{{$data['aboutUs']['image_2'] ? : asset('front_landing/images/about-2.png')}}"
-                                             class="w-100 h-100 object-fit-cover">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-5 col-lg-4 mt-lg-0 mt-sm-5 mt-4">
-                        <div class="about-right">
-                            <h2 class="text-dark fw-6 mb-3 pb-1">{{ $data['aboutUs']['title'] }}</h2>
-                            <p class="text-dark fs-16 fw-5 mb-4 pb-lg-3">{{ $data['aboutUs']['short_description'] }}.</p>
-                            <ul>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_1'] }}</li>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_2'] }}</li>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_3'] }}</li>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{$data['aboutUs']['point_4']}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end about-section -->
 
         <!-- start count-section -->
         {{-- <section class="count-section bg-primary py-4">
@@ -578,7 +604,7 @@ $brands = brands();
                 </div>
                 <div class="row">
                     @foreach($data['teams'] as $team)
-                        <div class="col-lg-3 col-sm-6 col-12 our-team-block d-flex align-items-stretch mb-lg-0 mb-4">
+                        <div class="col-lg-6 col-sm-6 col-12 our-team-block d-flex align-items-stretch mb-lg-0 mb-4">
                             <div class="card flex-fill border-0">
                                 <div class="card-image  mx-auto ">
                                     <img src="{{ $team->image_url ? : asset('front_landing/images/team-1.png')}}"
@@ -588,6 +614,7 @@ $brands = brands();
                                 <div class="card-body text-center d-flex flex-column">
                                     <h4 class="fs-18 fw-5">{{ $team->name }}</h4>
                                     <h5 class="text-primary fs-14 fw-5 mb-0">{{ $team->designation }}</h5>
+                                    <p>{{$team->description}}</p>
                                 </div>
                             </div>
                         </div>

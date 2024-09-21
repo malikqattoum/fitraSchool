@@ -21,6 +21,7 @@ class TeamRepository extends BaseRepository
     protected $fieldSearchable = [
         'name',
         'designation',
+        'description',
     ];
 
     /**

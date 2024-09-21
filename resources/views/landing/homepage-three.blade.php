@@ -158,6 +158,7 @@ $brands = brands();
                             <div class="member-details">
                                 <h3>{{ $team->name }}</h3>
                                 <span>{{ $team->designation }}</span>
+                                <p>{{$team->description}}</p>
                             </div>
                         </div>
                     </div>

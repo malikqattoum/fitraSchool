@@ -36,6 +36,7 @@
                                 <div class="card-body text-center d-flex flex-column">
                                     <h4 class="fs-18 fw-5">{{ $team->name }}</h4>
                                     <h5 class="text-primary fs-14 fw-5 mb-0">{{ $team->designation }}</h5>
+                                    <p>{{$team->description}}</p>
                                 </div>
                             </div>
                         </div>

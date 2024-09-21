@@ -10,6 +10,12 @@
     <p>{{ $team->designation }}</p>
 </div>
 
+<!-- Description Field -->
+<div class="form-group">
+    {{ Form::label('description', __('models/teams.fields.description').':') }}
+    <p>{{ $team->description }}</p>
+</div>
+
 <!-- Created At Field -->
 <div class="form-group">
     {{ Form::label('created_at', __('models/teams.fields.created_at').':') }}

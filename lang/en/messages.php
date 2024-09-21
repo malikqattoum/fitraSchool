@@ -414,6 +414,7 @@ return [
         'designation' => 'Designation',
         'add_new_team' => 'Add Team Member',
         'edit_team' => 'Edit Team Member',
+        'description' => 'Description',
     ],
     'terms_conditions' => [
         'terms_conditions' => 'Terms Conditions',
@@ -574,6 +575,7 @@ return [
         'school_life' => 'School Life',
         'program' => 'Program',
         'donation_campaigns' => 'Donation Campaigns',
+        'principals_message' => 'Principal’s Message',
     ],
 
     'payout_setting' => [

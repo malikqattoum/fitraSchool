@@ -22,6 +22,11 @@
                     {{ Form::label('designation', __('messages.teams.designation').(':'), ['class' => 'required mb-2']) }}
                     {{ Form::text('designation', null, ['class' => 'form-control', 'placeholder' => __('messages.teams.designation'), 'required']) }}
                 </div>
+
+                <div class="mb-5">
+                    {{ Form::label('description', __('messages.teams.description').(':'), ['class' => 'required mb-2']) }}
+                    {{ Form::text('description', null, ['class' => 'form-control', 'placeholder' => __('messages.teams.description'), 'required']) }}
+                </div>
                 <div class="mb-3" io-image-input="true">
                     <label for="image" class="form-label required">{{ __('messages.common.image').':' }}</label>
                     <span data-bs-toggle="tooltip"

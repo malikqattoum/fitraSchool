@@ -15,6 +15,10 @@
     {{ $row->designation }}
 </x-livewire-tables::bs5.table.cell>
 
+<x-livewire-tables::bs5.table.cell class="text-center">
+    {{ $row->description }}
+</x-livewire-tables::bs5.table.cell>
+
 <x-livewire-tables::bs5.table.cell>
     <div class="badge bg-secondary">
         {{ \Carbon\Carbon::parse($row->created_at)->isoFormat('Do MMM, YYYY')}}

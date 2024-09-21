@@ -25,6 +25,12 @@
                 </div>
 
                 <div class="mb-5">
+                    {{ Form::label('description', __('messages.teams.description').(':'), ['class' => 'required mb-2']) }}
+                    {{ Form::text('description', null, ['class' => 'form-control', 'placeholder' => __('messages.teams.description'), 'required','id'=>'editDescription']) }}
+                    <div class="fv-plugins-message-container invalid-feedback"></div>
+                </div>
+
+                <div class="mb-5">
                     <div class="mb-3" io-image-input="true">
                         <label for="exampleInputImage"
                                class="form-label required mb-2">{{__('messages.common.image').':' }}</label>

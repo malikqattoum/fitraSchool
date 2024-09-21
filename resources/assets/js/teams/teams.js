@@ -24,6 +24,7 @@ function renderTeamData (editTeamID) {
             $('#editTeamId').val(result.data.id)
             $('#editName').val(result.data.name)
             $('#editDesignation').val(result.data.designation)
+            $('#editDescription').val(result.data.description)
             if (isEmpty(result.data.image_url)) {
                 $('#editPreviewImage').css('background-image',
                     'url("' + defaultTeamImage + '")')

@@ -27,6 +27,7 @@ class Team extends Model implements HasMedia
     public $fillable = [
         'name',
         'designation',
+        'description',
     ];
 
     protected $with = ['media'];
@@ -41,6 +42,7 @@ class Team extends Model implements HasMedia
     protected $casts = [
         'name' => 'string',
         'designation' => 'string',
+        'description' => 'string',
     ];
 
     /**

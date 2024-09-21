@@ -27,6 +27,8 @@ class TeamTable extends LivewireTableComponent
                 ->sortable()->searchable(),
             Column::make(__('messages.teams.designation'), 'designation')
                 ->sortable()->searchable()->addClass('justify-content-center d-flex'),
+            Column::make(__('messages.teams.description'), 'description')
+                ->sortable()->searchable(),
             Column::make(__('messages.common.created_on'), 'created_at')
                 ->sortable(),
             Column::make(__('messages.common.action'))->addClass('w-125px'),
