@@ -58,9 +58,17 @@
                             <li class="nav-item"><a href="{{ route('landing.team')}}"
                                 class="nav-link  fw-5  fs-14 {{ Request::is('teams') ? 'active' : '' }}">{{__('messages.front_landing.team')}}</a>
                             </li>
-                            <li class="nav-item"><a href="{{ route('landing.event') }}"
+                            @foreach ( $pages as $page)
+                                @if($page->is_active && $page->name == 'Admissions')
+                                    <li class="nav-item">
+                                        <a href="{{ route('landing.page.detail',$page->id) }}"
+                                        class="nav-link  fw-5  fs-14 {{ Request::is('page/'.$page->id) ? 'active' : '' }}">{!! nl2br( \Illuminate\Support\Str::limit($page->name) ) !!}</a>
+                                    </li>
+                                @endif
+                            @endforeach
+                            {{-- <li class="nav-item"><a href="{{ route('landing.event') }}"
                                 class="nav-link  fw-5  fs-14 {{ Request::is('events','event-details/*') ? 'active' : '' }}">{{__('messages.events.events')}}</a>
-                            </li>
+                            </li> --}}
                             {{-- <li class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('news','news-details*') ? 'active' : '' }}"
                                    href="{{ route('landing.news') }}">{{__('messages.news.news')}}</a>
@@ -136,10 +144,19 @@
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('news','news-details*') ? 'active' : '' }}"
                                    href="{{ route('landing.news') }}">{{__('messages.news.news')}}</a>
                             </div> --}}
-                            <div class="nav-item">
+                            {{-- <div class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('events','event-details/*') ? 'active' : '' }}"
                                    href="{{ route('landing.event') }}">{{__('messages.event.events')}}</a>
-                            </div>
+                            </div> --}}
+
+                            @foreach ( $pages as $page)
+                                @if($page->is_active && $page->name == 'Admissions')
+                                    <div class="nav-item">
+                                        <a href="{{ route('landing.page.detail',$page->id) }}"
+                                        class="nav-link  fw-5 fs-14 {{ Request::is('page/'.$page->id) ? 'active' : '' }}">{{ $page->name }}</a>
+                                    </div>
+                                @endif
+                            @endforeach
 
                             <div class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('teams') ? 'active' : '' }}"
@@ -154,8 +171,8 @@
                                     <a href="{{ getDashboardURL() }}"
                                        class="d-btn btn btn-primary">{{__('messages.dashboard')}}</a>
                                 @else
-                                    <a href="{{ route('register') }}" type="button"
-                                       class="btn btn-secondary me-xxl-3 me-3 mb-3 mb-lg-0"> {{__('messages.front_landing.sign_up')}}</a>
+                                    {{-- <a href="{{ route('register') }}" type="button"
+                                       class="btn btn-secondary me-xxl-3 me-3 mb-3 mb-lg-0"> {{__('messages.front_landing.sign_up')}}</a> --}}
                                     <a href="{{ route('login') }}"
                                        class="btn btn-primary mb-3 mb-lg-0">{{__('messages.common.sign_in')}}</a>
                                 @endif

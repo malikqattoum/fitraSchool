@@ -29,6 +29,11 @@
     <link rel="stylesheet" href="{{asset('css/front-third-party.css')}}">
     <link rel="stylesheet" href="{{asset('css/front-pages.css')}}">
 	<link rel="stylesheet" href="{{ mix('css/front-custom.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
 	@livewireStyles
     @yield('page_css')

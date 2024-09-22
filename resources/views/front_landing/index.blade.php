@@ -81,6 +81,26 @@ $brands = brands();
             </div>
 
         </section>
+
+        <section class="donate-section bg-white py-60">
+            <div class="container">
+                <div class="row">
+                    @php $firstCampaign = true; @endphp
+                    @foreach($data['campaigns'] as $campaign)
+                        @if(!campaignEnd($campaign->id))
+                            @if($firstCampaign)
+                                <div class="col-12 text-center">
+                                    <a href="{{route('landing.payment', $campaign->slug)}}"
+                                       class="btn btn-primary big-btn mt-4">{{__('messages.front_landing.donate_now')}}</a>
+                                </div>
+                                @php $firstCampaign = false; @endphp
+                            @endif
+                        @endif
+                    @endforeach
+                </div>
+            </div>
+        </section>
+
         <!-- end hero-section -->
 
         <!-- start category-section -->
@@ -182,39 +202,22 @@ $brands = brands();
                 <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.principals_message')}}</h2>
                 <div class="row">
                     <p>
-                        <pre>
-                            Assalamu Alaikum,
-                            Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child.
-                            As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals.
-                            This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life (khilafa on earth).
-                            Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam.
-                            We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.
-                            I am honored to work with a passionate and dedicated team that shares this vision.
-                            We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.
+                        Assalamu Alaikum,<br>
+                        Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child.<br>
+                        As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals.<br>
+                        This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life (khilafa on earth).<br>
+                        Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam.<br>
+                        We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.<br>
+                        I am honored to work with a passionate and dedicated team that shares this vision.<br>
+                        We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.<br><br>
 
-                            Reem Yousef
-                            Principal, Fitra School
-                        </pre>
+                        Reem Yousef<br>
+                        Principal, Fitra School
                     </p>
                 </div>
             </div>
         </section>
-        <!-- end Admissions-section -->
-
-        <!-- start Admissions-section -->
-        <section class="about-section pb-60 pt-60">
-            <div class="container">
-                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.admissions')}}</h2>
-                <div class="row">
-                    <ul class="list-group">
-                        <li class="list-group-item">Tuition fees. $500/month</li>
-                        <li class="list-group-item">Registration link for 2024-2025 <a href="https://form.jotform.com/242304365892257" target="_blank" class="btn btn-primary">Register</a></li>
-                        <li class="list-group-item">Provide links for 2024 January enrolment waitlist.</li>
-                      </ul>
-                </div>
-            </div>
-        </section>
-        <!-- end Admissions-section -->
+        <!-- end Principal’s Message-section -->
 
         <!-- start school life-section -->
         <section class="about-section bg-gray py-60">
@@ -489,7 +492,7 @@ $brands = brands();
         <!-- end why-chooses-section -->
 
         <!-- start events section -->
-        <section class="events-section pb-60">
+        {{-- <section class="events-section pb-60">
             <div class="container">
                 <div class="text-center">
                     <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.insights')}}</h2>
@@ -549,7 +552,7 @@ $brands = brands();
                     @endforeach
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end events section -->
 
         <!-- start news-feeds-section -->
@@ -596,7 +599,7 @@ $brands = brands();
         <!-- end news-feeds-section -->
 
         <!-- start our-team-section -->
-        <section class="our-team-section pb-60">
+        {{-- <section class="our-team-section pb-60">
             <div class="container">
                 <div class="text-center">
                     <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.volunteers')}}</h2>
@@ -621,7 +624,7 @@ $brands = brands();
                     @endforeach
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end our-team-section -->
 
     </div>
