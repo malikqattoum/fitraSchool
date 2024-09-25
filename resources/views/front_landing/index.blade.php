@@ -160,7 +160,7 @@ $brands = brands();
                                         <img src="{{$data['aboutUs']['image_1'] ? : asset('front_landing/images/about-1.png')}}"
                                                 class="w-100 h-100 object-fit-cover">
                                     </div>
-                                    <div class="about-content-box bg-primary ">
+                                    {{-- <div class="about-content-box bg-primary ">
                                         <div class="about-content d-flex flex-column align-items-center justify-content-center ">
                                             <h2 class="number-big text-white fs-1 fw-6 counter"
                                                 data-countto="{{ $data['aboutUs']['years_of_exp'] }}"
@@ -168,7 +168,7 @@ $brands = brands();
                                             </h2>
                                             <p class="mb-0 text-white fs-14 fw-5">{{__('messages.about_us.years_of_exp')}}</p>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="col-md-6 d-md-flex align-items-center">
                                     <div class="about-2">
@@ -182,13 +182,26 @@ $brands = brands();
                     <div class="col-xxl-6 col-xl-5 col-lg-4 mt-lg-0 mt-sm-5 mt-4">
                         <div class="about-right">
                             <h2 class="text-dark fw-6 mb-3 pb-1">{{ $data['aboutUs']['title'] }}</h2>
-                            <p class="text-dark fs-16 fw-5 mb-4 pb-lg-3">{{ $data['aboutUs']['short_description'] }}.</p>
+                            <p>
+                                Assalamu Alaikum,<br>
+                                Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child.<br>
+                                As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals.<br>
+                                This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life (khilafa on earth).<br>
+                                Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam.<br>
+                                We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.<br>
+                                I am honored to work with a passionate and dedicated team that shares this vision.<br>
+                                We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.<br><br>
+
+                                Reem Yousef<br>
+                                Principal, Fitra School
+                            </p>
+                            {{-- <p class="text-dark fs-16 fw-5 mb-4 pb-lg-3">{{ $data['aboutUs']['short_description'] }}.</p>
                             <ul>
                                 <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_1'] }}</li>
                                 <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_2'] }}</li>
                                 <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_3'] }}</li>
                                 <li class="text-dark fs-16 fw-5 mb-2">{{$data['aboutUs']['point_4']}}</li>
-                            </ul>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -197,7 +210,7 @@ $brands = brands();
         <!-- end about-section -->
 
         <!-- start Principal’s Message-section -->
-        <section class="about-section pb-60 pt-60">
+        {{-- <section class="about-section pb-60 pt-60">
             <div class="container">
                 <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.principals_message')}}</h2>
                 <div class="row">
@@ -216,45 +229,15 @@ $brands = brands();
                     </p>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end Principal’s Message-section -->
-
-        <!-- start school life-section -->
-        <section class="about-section bg-gray py-60">
-            <div class="container">
-                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.school_life')}}</h2>
-                <div class="row">
-                    <ul class="list-group">
-                        <li class="list-group-item">Daily schedule (9:00 AM - 3:30 PM).</li>
-                        <li class="list-group-item">Overview of facilities and classrooms.</li>
-                        <li class="list-group-item">School events, trips, calendar</li>
-                      </ul>
-                </div>
-            </div>
-        </section>
-        <!-- end school life-section -->
-
-        <!-- start program-section -->
-        <section class="about-section pb-60 pt-60">
-            <div class="container">
-                <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.program')}}</h2>
-                <div class="row">
-                    <ul class="list-group">
-                        <li class="list-group-item">Year 2024-2025</li>
-                        <li class="list-group-item">Daily schedule (9:00 AM - 3:30 PM).</li>
-                        <li class="list-group-item">Grades from JK to Gr.4</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- end school life-section -->
 
         <!-- start trending-causes-section -->
         <section class="trending-causes-section bg-gray py-60">
             <div class="container">
                 <div class="text-center">
                     <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.donation_campaigns')}}</h2>
-                    <h3 class="fs-2 fw-6 mb-60">{{__("messages.front_landing.it's_about_impact_good_history")}}</h3>
+                    {{-- <h3 class="fs-2 fw-6 mb-60">{{__("messages.front_landing.it's_about_impact_good_history")}}</h3> --}}
                 </div>
                 <div class="row">
                     @foreach($data['campaigns'] as $campaign)

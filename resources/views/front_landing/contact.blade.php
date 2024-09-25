@@ -112,7 +112,7 @@
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-primary me-3"
-                                                id="getInTouchSaveBtn">{{__('messages.front_landing.get_a_quote')}}
+                                                id="getInTouchSaveBtn">{{__('messages.front_landing.send')}}
                                         </button>
                                     </div>
                                 </div>

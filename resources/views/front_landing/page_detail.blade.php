@@ -24,11 +24,25 @@
         <!-- end hero-section -->
 
         @if ($page->name == 'Admissions')
+            <!-- start Program-section -->
+            <section class="about-section pb-60 pt-60">
+                <div class="container">
+                    <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.program')}}</h2>
+                    <div class="row">
+                        <ul class="list-group">
+                            <li class="list-group-item">Year 2024-2025</li>
+                            <li class="list-group-item">Daily schedule (9:00 AM - 3:30 PM).</li>
+                            <li class="list-group-item">Grades from JK to Gr.4</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- end Program-section -->
             <section class="about-section pb-60 pt-60">
                 <div class="container">
                     <div class="row">
                         <ul class="list-group">
-                            <li class="list-group-item">Tuition fees. $500/month</li>
+                            <li class="list-group-item">Tuition fees: $500 per month, plus resource fees of $250 per year.</li>
                             <li class="list-group-item">Registration link for 2024-2025 <a href="https://form.jotform.com/242304365892257" target="_blank" class="btn btn-primary">Register</a></li>
                             <li class="list-group-item">Provide links for 2024 January enrolment waitlist.</li>
                         </ul>
