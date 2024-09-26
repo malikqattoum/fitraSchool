@@ -39,7 +39,7 @@ $settings = settings();
                                         <img src="{{ $aboutUs['image_1'] ? :asset('front_landing/images/about-us1.png')}}"
                                              class="w-100 h-100 object-fit-cover">
                                     </div>
-                                    <div class="about-content-box bg-primary ">
+                                    {{-- <div class="about-content-box bg-primary ">
                                         <div class="about-content d-flex flex-column align-items-center justify-content-center ">
                                             <h2 class="number-big text-white fs-1 fw-6 counter"
                                                 data-countto="{{ $aboutUs['years_of_exp'] }}"
@@ -47,7 +47,7 @@ $settings = settings();
                                             </h2>
                                             <p class="mb-0 text-white fs-14 fw-5">{{__('messages.about_us.years_of_exp')}}</p>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="col-md-6 d-md-flex align-items-center">
                                     <div class="about-2">
@@ -62,13 +62,19 @@ $settings = settings();
                         <div class="about-right">
                             <p class="text-primary fs-16 fw-6 mb-3 pb-1">{{__('messages.about_us.about_us')}}</p>
                             <h2 class="text-dark fw-6 mb-3 pb-1">{{ $aboutUs['title'] }}</h2>
-                            <p class="text-dark fs-16 fw-5 mb-4 pb-lg-3">{{ $aboutUs['short_description'] }}.</p>
-                            <ul>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{ $aboutUs['point_1'] }}</li>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{ $aboutUs['point_2'] }}</li>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{ $aboutUs['point_3'] }}</li>
-                                <li class="text-dark fs-16 fw-5 mb-2">{{$aboutUs['point_4']}}</li>
-                            </ul>
+                            <p>
+                                Assalamu Alaikum,<br>
+                                Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child.<br>
+                                As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals.<br>
+                                This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life (khilafa on earth).<br>
+                                Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam.<br>
+                                We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.<br>
+                                I am honored to work with a passionate and dedicated team that shares this vision.<br>
+                                We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.<br><br>
+
+                                Reem Yousef<br>
+                                Principal, Fitra School
+                            </p>
                         </div>
                     </div>
                 </div>

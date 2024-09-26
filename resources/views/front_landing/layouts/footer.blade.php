@@ -65,11 +65,11 @@
                                 <i class="fa-brands fa-instagram fs-16 justify-content-between align-items-center"></i>
                             </a>
                         </div>
-                        <div class="icon d-flex align-items-center justify-content-center me-sm-4 me-3">
+                        {{-- <div class="icon d-flex align-items-center justify-content-center me-sm-4 me-3">
                             <a href="{{ $settings['linkedin_url'] }}" target="_blank">
                                 <i class="fa-brands fa-linkedin-in fs-16 justify-content-between align-items-center"></i>
                             </a>
-                        </div>
+                        </div> --}}
                         {{-- <div class="icon d-flex align-items-center justify-content-center">
                             <a href="{{ $settings['youtube_url'] }}" target="_blank">
                                 <i class="fa-brands fa-youtube fs-16 justify-content-between align-items-center"></i>
