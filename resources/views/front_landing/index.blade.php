@@ -756,22 +756,37 @@ $brands = brands();
         <section class="carousel-section mb-5" data-aos="fade-up" data-aos-duration="1800">
             <div class="gallery">
                 <span style="--i:1">
-                    <img src="{{ asset('assets/images/homepage_carousel_one.jpeg') }}" alt="Image 1">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_one.jpeg') }}" alt="Image 1">
                 </span>
                 <span style="--i:2">
-                    <img src="{{ asset('assets/images/homepage_carousel_two.jpeg') }}" alt="Image 2">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_two.jpeg') }}" alt="Image 2">
                 </span>
                 <span style="--i:3">
-                    <img src="{{ asset('assets/images/homepage_carousel_three.jpeg') }}" alt="Image 3">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_three.jpeg') }}" alt="Image 3">
                 </span>
                 <span style="--i:4">
-                    <img src="{{ asset('assets/images/homepage_carousel_four.jpeg') }}" alt="Image 4">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_four.jpeg') }}" alt="Image 4">
                 </span>
                 <span style="--i:5">
-                    <img src="{{ asset('assets/images/homepage_carousel_five.jpeg') }}" alt="Image 5">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_five.jpeg') }}" alt="Image 5">
                 </span>
                 <span style="--i:6">
-                    <img src="{{ asset('assets/images/homepage_carousel_six.jpeg') }}" alt="Image 6">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_six.jpeg') }}" alt="Image 6">
+                </span>
+                <span style="--i:7">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_seven.jpeg') }}" alt="Image 6">
+                </span>
+                <span style="--i:8">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_eight.jpeg') }}" alt="Image 6">
+                </span>
+                <span style="--i:9">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_nine.jpeg') }}" alt="Image 6">
+                </span>
+                <span style="--i:10">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_ten.jpeg') }}" alt="Image 6">
+                </span>
+                <span style="--i:11">
+                    <img src="{{ asset('front_landing/images/homepage_carousel_eleven.jpeg') }}" alt="Image 6">
                 </span>
             </div>
         </section>
