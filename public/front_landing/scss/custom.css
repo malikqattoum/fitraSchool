@@ -373,6 +373,16 @@ a {
     color: #fff
 }
 
+.inner-bgimg .parallelogram-shape::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #FFF;
+    width: 100%
+}
+
 @media (min-width: 768px) {
     .inner-bgimg .parallelogram-shape::before {
         content: "";

@@ -9109,36 +9109,223 @@ fieldset:disabled .btn {
     color: var(--bs-primary); /* Default for mobile */
 }
 
+
 @media (min-width: 992px) {
     .text-responsive {
         color: var(--bs-primary); /* Bootstrap primary color for desktop */
     }
 }
 
-.hero-section {
-    position: relative; /* Ensure it's positioned relative */
-    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
-}
+/* Make sure this styling is applied only to the carousel section */
+.carousel-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
 
-/* Mobile view */
-@media (max-width: 768px) {
-    .hero-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.5); /* White color with 0.5 opacity */
-        z-index: 1; /* Place it above the background */
-        pointer-events: none; /* Allows interaction with elements below the overlay */
+  .carousel-section .gallery {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 35s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: perspective(1200px) rotateY(0deg);
     }
+    to {
+      transform: perspective(1200px) rotateY(360deg);
+    }
+  }
 
-    /* .hero-section .hero-content {
-        position: relative;
-        z-index: 2;
-    } */
+  .carousel-section .gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  }
+
+  .carousel-section .gallery span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+.principal-message {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust based on your layout */
+    background-color: #f9f9f9; /* Background of the letter */
+    border: 1px solid #ddd; /* Light border for the letter paper */
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 5px; /* Slightly rounded corners */
 }
+
+/* Creating the smaller folded corner effect */
+.principal-message::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;  /* Reduced size of the folded corner */
+    height: 50px; /* Reduced size of the folded corner */
+    background-color: #f9f9f9; /* Same background color as the paper */
+    border: 1px solid #ddd; /* Same border as the paper */
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg); /* Rotate to create the fold effect */
+    transform-origin: top right;
+    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Content inside the principal's message */
+.message-content {
+    position: relative;
+    z-index: 1;
+}
+
+.message-title {
+    font-family: 'Georgia', serif; /* Use a serif font for a formal look */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.message-content p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.signature {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: right;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+/* Make sure this styling is applied only to the carousel section */
+.carousel-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .carousel-section .gallery {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 35s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: perspective(1200px) rotateY(0deg);
+    }
+    to {
+      transform: perspective(1200px) rotateY(360deg);
+    }
+  }
+
+  .carousel-section .gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  }
+
+  .carousel-section .gallery span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .corner-decorated-section {
+    position: relative;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #fff; /* Background color */
+}
+
+/* Adding corner decorations */
+.corner-decorated-section::before,
+.corner-decorated-section::after,
+.corner-decorated-section .corner-top-left,
+.corner-decorated-section .corner-top-right,
+.corner-decorated-section .corner-bottom-left,
+.corner-decorated-section .corner-bottom-right {
+    content: '';
+    position: absolute;
+    width: 100px; /* Adjust based on the image size */
+    height: 100px; /* Adjust based on the image size */
+    background-image: url('/front_landing/images/islamic-dec-flower.png'); /* Path to your star image */
+    background-size: cover; /* Ensure the image covers the element */
+}
+
+/* Positioning for corners */
+.corner-decorated-section::before { /* Top-left */
+    top: 0;
+    left: 0;
+}
+
+.corner-decorated-section::after { /* Bottom-right */
+    bottom: 0;
+    right: 0;
+}
+
+.corner-decorated-section .corner-top-left { /* Top-left (duplicate) */
+    top: 0;
+    left: 0;
+}
+
+.corner-decorated-section .corner-top-right { /* Top-right */
+    top: 0;
+    right: 0;
+}
+
+.corner-decorated-section .corner-bottom-left { /* Bottom-left */
+    bottom: 0;
+    left: 0;
+}
+
+.corner-decorated-section .corner-bottom-right { /* Bottom-right (duplicate) */
+    bottom: 0;
+    right: 0;
+}
+
+/* Optional enhancements */
+.corner-decorated-section {
+    border: 2px solid #ccc; /* Add a border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    border-radius: 8px; /* Optional: round corners */
+    overflow: hidden; /* Prevent overflow of corner images */
+}
+
+.full-width-background-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set the desired height for the section */
+    background-image: url('/front_landing/images/islamic-dec.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-attachment: fixed; /* Makes the background image fixed */
+    display: flex; /* Optional: for centering any content */
+    justify-content: center; /* Optional: for centering any content */
+    align-items: center; /* Optional: for centering any content */
+}
+
 
 .text-secondary {
     --bs-text-opacity: 1;

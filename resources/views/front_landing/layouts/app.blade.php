@@ -19,12 +19,12 @@
 
     <link rel="stylesheet" href="{{asset('front_landing/css/all.min.css')}}"
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  
+
     <link href="{{asset('css/front-third-party.css')}}" rel="stylesheet">
     <link href="{{ mix('css/front-pages.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ mix('css/front-custom.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css" rel="stylesheet">
 
-  
     @livewireStyles
     @yield('page_css')
 
@@ -63,5 +63,12 @@
 @elseif($settings['active_homepage_status'] == 3)
     @include('landing.layouts.footer-three')
 @endif
+
+    <!-- AOS JS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

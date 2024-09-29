@@ -44,7 +44,7 @@
                         <ul class="list-group">
                             <li class="list-group-item">Tuition fees: $500 per month, plus resource fees of $250 per year.</li>
                             <li class="list-group-item">Registration link for 2024-2025 <a href="https://form.jotform.com/242304365892257" target="_blank" class="btn btn-primary">Register</a></li>
-                            <li class="list-group-item">Provide links for 2024 January enrolment waitlist.</li>
+                            <li class="list-group-item">2024-2025 January enrolment waitlist. <a href="https://forms.gle/dibdSyz7QKTucFd17" target="_blank" class="btn btn-primary">Register</a></li>
                         </ul>
                     </div>
                 </div>

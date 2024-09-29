@@ -577,6 +577,7 @@ return [
         'program' => 'Program',
         'donation_campaigns' => 'Donation Campaigns',
         'principals_message' => 'Principal’s Message',
+        'gallery' => 'Gallery',
     ],
 
     'payout_setting' => [

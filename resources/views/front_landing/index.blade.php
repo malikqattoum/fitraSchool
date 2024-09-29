@@ -82,7 +82,7 @@ $brands = brands();
 
         </section>
 
-        <section class="donate-section bg-white py-60">
+        <section class="donate-section bg-white py-60" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="row">
                     @php $firstCampaign = true; @endphp
@@ -132,23 +132,82 @@ $brands = brands();
         <!-- end category-section -->
 
         <!-- start overview section -->
-        <section class="trending-causes-section bg-gray py-60">
+        <section class="trending-causes-section bg-gray py-60 corner-decorated-section" data-aos="fade-left" data-aos-duration="1200">
             <div class="container">
                 <div class="text-center">
                     <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.overview')}}</h2>
                     <h3 class="fs-2 fw-6 mb-60">{{__("messages.front_landing.mission_vision")}}</h3>
-                    <p>At Fitra School, our vision is to nurture and develop a generation of confident, capable, and morally grounded Muslim leaders who excel in all areas of life, not only academically successful but also deeply rooted in their Islamic identity.
-                        By blending subjects and developing core competencies, Fitra School seeks to empower students to thrive not only in academic settings but also as leaders and change-makers in their community and their Ummah at large, while upholding the principles of Islam at their core.</p>
+                    <p>
+                        At Fitra School, our vision is to nurture and develop a generation of confident, capable, and morally grounded Muslim leaders who excel in all areas of life, not only academically successful but also deeply rooted in their Islamic identity. By blending subjects and developing core competencies, Fitra School seeks to empower students to thrive not only in academic settings but also as leaders and change-makers in their community and their Ummah at large, while upholding the principles of Islam at their core.
+                    </p>
                 </div>
-                <div class="row">
 
+                <div class="row">
+                    <!-- Subjects We Teach -->
+                    <div class="subjects-section mt-4">
+                        <h3 class="text-center">Subjects We Teach</h3>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-calculator text-primary m-2"></i> Math</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-flask text-primary m-2"></i> Science</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-globe text-primary m-2"></i> Social Studies</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-book text-primary m-2"></i> English</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-book-open text-primary m-2"></i> Arabic</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-quran text-primary m-2"></i> Islamic Studies</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-quran text-primary m-2"></i> Quran</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="subject-item"><i class="fas fa-futbol text-primary m-2"></i> Health/Physical Education</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tamkeen Clubs -->
+                    <div class="tamkeen-clubs-section mt-4">
+                        <h3 class="text-center">Tamkeen Clubs</h3>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="club-item"><i class="fas fa-code text-primary m-2"></i> Coding Club</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="club-item"><i class="fas fa-comments text-primary m-2"></i> Leadership & Public Speaking Club</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="club-item"><i class="fas fa-lightbulb text-primary m-2"></i> MuslimPreneur Club</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="club-item"><i class="fas fa-paint-brush text-primary m-2"></i> Handmade/Art Club</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="club-item"><i class="fas fa-seedling text-primary m-2"></i> Planting Club</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="corner-top-left"></div>
+            <div class="corner-top-right"></div>
+            <div class="corner-bottom-left"></div>
+            <div class="corner-bottom-right"></div>
         </section>
+
         <!-- end overview section -->
 
         <!-- start about-section -->
-        <section class="about-section pb-60 pt-60">
+        <section class="about-section pb-60 pt-60" data-aos="fade-right" data-aos-duration="1400">
             <div class="container">
                 <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.about_us.about_us')}}</h2>
                 <div class="row">
@@ -181,20 +240,20 @@ $brands = brands();
                     </div>
                     <div class="col-xxl-6 col-xl-5 col-lg-4 mt-lg-0 mt-sm-5 mt-4">
                         <div class="about-right">
-                            <h2 class="text-dark fw-6 mb-3 pb-1">{{ $data['aboutUs']['title'] }}</h2>
-                            <p>
-                                Assalamu Alaikum,<br>
-                                Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child.<br>
-                                As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals.<br>
-                                This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life (khilafa on earth).<br>
-                                Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam.<br>
-                                We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.<br>
-                                I am honored to work with a passionate and dedicated team that shares this vision.<br>
-                                We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.<br><br>
+                            {{-- <h2 class="text-dark fw-6 mb-3 pb-1">{{ $data['aboutUs']['title'] }}</h2> --}}
+                            <section class="principal-message">
+                                <div class="message-content">
+                                    <h2 class="message-title">{{__('messages.front_landing.principals_message')}}</h2>
+                                    <p>
+                                        Assalamu Alaikum,<br><br>
+                                        Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child. As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals. This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life <b>(khilafa on earth)</b>.<br><br>
+                                        Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam. We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.<br><br>
+                                        I am honored to work with a passionate and dedicated team that shares this vision. We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.<br><br>
+                                    </p>
+                                    <p class="signature">Reem Yousef<br>Principal, Fitra School</p>
+                                </div>
+                            </section>
 
-                                Reem Yousef<br>
-                                Principal, Fitra School
-                            </p>
                             {{-- <p class="text-dark fs-16 fw-5 mb-4 pb-lg-3">{{ $data['aboutUs']['short_description'] }}.</p>
                             <ul>
                                 <li class="text-dark fs-16 fw-5 mb-2">{{ $data['aboutUs']['point_1'] }}</li>
@@ -208,6 +267,12 @@ $brands = brands();
             </div>
         </section>
         <!-- end about-section -->
+
+        <section class="full-width-background-section">
+            <div class="container">
+            </div>
+        </section>
+
 
         <!-- start Principal’s Message-section -->
         {{-- <section class="about-section pb-60 pt-60">
@@ -233,10 +298,10 @@ $brands = brands();
         <!-- end Principal’s Message-section -->
 
         <!-- start trending-causes-section -->
-        <section class="trending-causes-section bg-gray py-60">
+        <section class="trending-causes-section bg-gray py-60 corner-decorated-section" data-aos="zoom-in" data-aos-duration="1600">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.donation_campaigns')}}</h2>
+                    <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.donation_campaigns')}}</h2>
                     {{-- <h3 class="fs-2 fw-6 mb-60">{{__("messages.front_landing.it's_about_impact_good_history")}}</h3> --}}
                 </div>
                 <div class="row">
@@ -356,6 +421,11 @@ $brands = brands();
                        class="btn btn-secondary px-5">{{__('messages.front_landing.view_all')}}</a>
                 </div>
             </div>
+
+            <div class="corner-top-left"></div>
+            <div class="corner-top-right"></div>
+            <div class="corner-bottom-left"></div>
+            <div class="corner-bottom-right"></div>
         </section>
         <!-- end trending-causes-section -->
 
@@ -609,6 +679,102 @@ $brands = brands();
             </div>
         </section> --}}
         <!-- end our-team-section -->
+        <div class="text-center mt-5 mb-5">
+            <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.gallery')}}</h2>
+        </div>
+        {{-- <div id="carouselGalleryIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_one.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_two.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_three.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_four.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_five.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_six.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_seven.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_eight.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_nine.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_ten.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inner-bgimg position-relative object-fit-cover"
+                            style="background: url('{{ asset('assets/images/homepage_carousel_eleven.jpeg') }}') no-repeat right;">
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-xl-block">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalleryIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">{{__('messages.common.previous')}}</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselGalleryIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">{{__('messages.common.next')}}</span>
+                </button>
+            </div>
+        </div> --}}
+        <section class="carousel-section mb-5" data-aos="fade-up" data-aos-duration="1800">
+            <div class="gallery">
+                <span style="--i:1">
+                    <img src="{{ asset('assets/images/homepage_carousel_one.jpeg') }}" alt="Image 1">
+                </span>
+                <span style="--i:2">
+                    <img src="{{ asset('assets/images/homepage_carousel_two.jpeg') }}" alt="Image 2">
+                </span>
+                <span style="--i:3">
+                    <img src="{{ asset('assets/images/homepage_carousel_three.jpeg') }}" alt="Image 3">
+                </span>
+                <span style="--i:4">
+                    <img src="{{ asset('assets/images/homepage_carousel_four.jpeg') }}" alt="Image 4">
+                </span>
+                <span style="--i:5">
+                    <img src="{{ asset('assets/images/homepage_carousel_five.jpeg') }}" alt="Image 5">
+                </span>
+                <span style="--i:6">
+                    <img src="{{ asset('assets/images/homepage_carousel_six.jpeg') }}" alt="Image 6">
+                </span>
+            </div>
+        </section>
 
     </div>
 @endsection
