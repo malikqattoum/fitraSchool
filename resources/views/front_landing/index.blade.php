@@ -147,28 +147,28 @@ $brands = brands();
                     <div class="subjects-section mt-4">
                         <h3 class="text-center">Subjects We Teach</h3>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-calculator text-primary m-2"></i> Math</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-flask text-primary m-2"></i> Science</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-globe text-primary m-2"></i> Social Studies</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-book text-primary m-2"></i> English</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-book-open text-primary m-2"></i> Arabic</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-quran text-primary m-2"></i> Islamic Studies</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-quran text-primary m-2"></i> Quran</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="subject-item"><i class="fas fa-futbol text-primary m-2"></i> Health/Physical Education</div>
                             </div>
                         </div>
@@ -178,24 +178,25 @@ $brands = brands();
                     <div class="tamkeen-clubs-section mt-4">
                         <h3 class="text-center">Tamkeen Clubs</h3>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="club-item"><i class="fas fa-code text-primary m-2"></i> Coding Club</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="club-item"><i class="fas fa-comments text-primary m-2"></i> Leadership & Public Speaking Club</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="club-item"><i class="fas fa-lightbulb text-primary m-2"></i> MuslimPreneur Club</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="club-item"><i class="fas fa-paint-brush text-primary m-2"></i> Handmade/Art Club</div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-md-4">
                                 <div class="club-item"><i class="fas fa-seedling text-primary m-2"></i> Planting Club</div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <br><br>
             <div class="corner-top-left"></div>
