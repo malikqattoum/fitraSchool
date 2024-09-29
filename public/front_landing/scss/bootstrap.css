@@ -9312,6 +9312,20 @@ fieldset:disabled .btn {
     overflow: hidden; /* Prevent overflow of corner images */
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) { /* Adjust this value as needed for your breakpoints */
+    .corner-decorated-section::before,
+    .corner-decorated-section::after,
+    .corner-decorated-section .corner-top-left,
+    .corner-decorated-section .corner-top-right,
+    .corner-decorated-section .corner-bottom-left,
+    .corner-decorated-section .corner-bottom-right {
+        width: 50px; /* Smaller size on mobile */
+        height: 50px; /* Smaller size on mobile */
+    }
+}
+
+
 .full-width-background-section {
     position: relative;
     width: 100%;
