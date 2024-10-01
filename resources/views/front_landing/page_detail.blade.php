@@ -6,8 +6,13 @@
     <div class="blog-page">
         <!-- start hero-section -->
         <section class="hero-section">
-            <div class="inner-bgimg  position-relative"
-                 style="background: url('{{asset('front_landing/images/blog-hero-img.png')}}');">
+            @if ($page->name == 'Admissions')
+                <div class="inner-bgimg  position-relative"
+                    style="background: url('{{ asset('front_landing/images/homepage_carousel_four.jpeg') }}');">
+            @else
+                <div class="inner-bgimg  position-relative"
+                    style="background: url('{{asset('front_landing/images/blog-hero-img.png')}}');">
+            @endif
                 <div class="container">
                     <div class="row ">
                         <div class="col-md-7 parallelogram-shape">

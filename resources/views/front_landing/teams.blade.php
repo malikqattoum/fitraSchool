@@ -7,7 +7,7 @@
         <!-- start hero-section -->
         <section class="hero-section">
             <div class="inner-bgimg  position-relative"
-                 style="background: url('{{asset('front_landing/images/team-hero-img.png')}}');">
+                 style="background: url('{{ asset('front_landing/images/homepage_carousel_nine_hero.jpeg') }}');">
                 <div class="container">
                     <div class="row ">
                         <div class="col-lg-6 col-md-7 parallelogram-shape">
