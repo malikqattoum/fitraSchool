@@ -208,7 +208,7 @@ $brands = brands();
         <!-- end overview section -->
 
         <!-- start about-section -->
-        <section class="about-section pb-60 pt-60" data-aos="fade-right" data-aos-duration="1400">
+        <section class="about-section pb-60 pt-60 corner-decorated-section" data-aos="fade-right" data-aos-duration="1400">
             <div class="container">
                 <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.about_us.about_us')}}</h2>
                 <div class="row">
@@ -266,6 +266,11 @@ $brands = brands();
                     </div>
                 </div>
             </div>
+
+            <div class="corner-top-left"></div>
+            <div class="corner-top-right"></div>
+            <div class="corner-bottom-left"></div>
+            <div class="corner-bottom-right"></div>
         </section>
         <!-- end about-section -->
 
@@ -299,12 +304,12 @@ $brands = brands();
         <!-- end Principal’s Message-section -->
 
         <!-- start trending-causes-section -->
-        <section class="trending-causes-section bg-gray py-60 corner-decorated-section" data-aos="zoom-in" data-aos-duration="1600">
+        {{-- <section class="trending-causes-section bg-gray py-60 corner-decorated-section" data-aos="zoom-in" data-aos-duration="1600">
             <div class="container">
                 <div class="text-center">
                     <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.donation_campaigns')}}</h2>
                     {{-- <h3 class="fs-2 fw-6 mb-60">{{__("messages.front_landing.it's_about_impact_good_history")}}</h3> --}}
-                </div>
+                {{-- </div>
                 <div class="row">
                     @foreach($data['campaigns'] as $campaign)
                         @if(!campaignEnd($campaign->id))
@@ -427,7 +432,7 @@ $brands = brands();
             <div class="corner-top-right"></div>
             <div class="corner-bottom-left"></div>
             <div class="corner-bottom-right"></div>
-        </section>
+        </section> --}}
         <!-- end trending-causes-section -->
 
         <!-- start count-section -->

@@ -9325,6 +9325,14 @@ fieldset:disabled .btn {
     }
 }
 
+@media (max-width: 768px) {
+    .flex-column-mobile {
+        flex-direction: column !important;
+    }
+    .card-image {
+        margin-bottom: 15px; /* Adds space between image and text on mobile */
+    }
+}
 
 .full-width-background-section {
     position: relative;

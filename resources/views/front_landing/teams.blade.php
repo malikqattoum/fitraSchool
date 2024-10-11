@@ -28,14 +28,14 @@
                 <div class="row">
                     @foreach($teams as $team)
                         <div class="col-12 our-team-block d-flex align-items-stretch mb-5">
-                            <div class="card flex-fill border-0 d-flex flex-row rounded">
-                                <!-- Image on the left with fixed width -->
+                            <div class="card flex-fill border-0 d-flex flex-row flex-column-mobile rounded">
+                                <!-- Image on the top for mobile and left for larger screens -->
                                 <div class="card-image">
                                     <img src="{{ !empty($team->image_url) ? $team->image_url : asset('front_landing/images/team-1.png') }}"
-                                         alt="Infy Care" class="object-fit-cover rounded" style="max-width: 200px;max-height:200px;">
+                                         alt="Infy Care" class="object-fit-cover rounded" style="max-width: 200px; max-height:200px;">
                                 </div>
 
-                                <!-- Description on the right -->
+                                <!-- Description below the image for mobile -->
                                 <div class="card-body d-flex flex-column justify-content-center">
                                     <h4 class="fs-18 fw-5">{{ $team->name }}</h4>
                                     <h5 class="text-primary fs-14 fw-5 mb-0">{{ $team->designation }}</h5>
