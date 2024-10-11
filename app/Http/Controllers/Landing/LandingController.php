@@ -6,6 +6,7 @@ use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreateCallToActionRequest;
 use App\Http\Requests\CreateInquiryRequest;
 use App\Http\Requests\CreateNewsCommentsRequest;
+use App\Mail\InquiryMail;
 use App\Models\AboutUs;
 use App\Models\Brand;
 use App\Models\CallToAction;
@@ -40,6 +41,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class LandingController extends AppBaseController
 {
@@ -153,7 +155,12 @@ class LandingController extends AppBaseController
     public function store(CreateInquiryRequest $request)
     {
         $input = $request->all();
+
+        // Save the inquiry to the database
         Inquiry::create($input);
+
+        // Send an email with the inquiry details
+        Mail::to('info@fitraschool.ca')->send(new InquiryMail($input));
 
         return $this->sendSuccess('Inquiry sent successfully.');
     }
