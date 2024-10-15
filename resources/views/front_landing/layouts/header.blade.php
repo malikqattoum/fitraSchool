@@ -87,8 +87,8 @@
                                 {{-- <a href="{{ route('register') }}" type="button"
                                    class="btn btn-secondary  me-3 mb-3 mb-lg-0">
                                     {{__('messages.front_landing.sign_up')}}</a> --}}
-                                <a href="{{ route('login') }}"
-                                   class="btn btn-primary mb-3 mb-lg-0">{{__('messages.common.sign_in')}}</a>
+                                {{-- <a href="{{ route('login') }}"
+                                   class="btn btn-primary mb-3 mb-lg-0">{{__('messages.common.sign_in')}}</a> --}}
                             @endif
 
 

@@ -7,8 +7,8 @@
         <!-- start hero-section -->
         <section class="hero-section">
             @if ($page->name == 'Admissions')
-                <div class="inner-bgimg  position-relative"
-                    style="background: url('{{ asset('front_landing/images/homepage_carousel_four.jpeg') }}');">
+                <div class="inner-bgimg position-relative"
+                    style="background: url('{{ asset('front_landing/images/hero-image-2.jpeg') }}') no-repeat right !important;">
             @else
                 <div class="inner-bgimg  position-relative"
                     style="background: url('{{asset('front_landing/images/blog-hero-img.png')}}');">

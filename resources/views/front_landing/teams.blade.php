@@ -6,8 +6,8 @@
     <div class="team-page">
         <!-- start hero-section -->
         <section class="hero-section">
-            <div class="inner-bgimg  position-relative"
-                 style="background: url('{{ asset('front_landing/images/homepage_carousel_nine_hero.jpeg') }}');">
+            <div class="inner-bgimg position-relative"
+                 style="background: url('{{ asset('front_landing/images/hero-image-1.jpeg') }}') no-repeat right !important;">
                 <div class="container">
                     <div class="row ">
                         <div class="col-lg-6 col-md-7 parallelogram-shape">
@@ -38,7 +38,7 @@
                                 <!-- Description below the image for mobile -->
                                 <div class="card-body d-flex flex-column justify-content-center">
                                     <h4 class="fs-18 fw-5">{{ $team->name }}</h4>
-                                    <h5 class="text-primary fs-14 fw-5 mb-0">{{ $team->designation }}</h5>
+                                    <h5 class="badge rounded-pill bg-primary fs-14 fw-5 mb-0" style="width:100px">{{ $team->designation }}</h5>
                                     <p>{{ $team->description }}</p>
                                 </div>
                             </div>
