@@ -551,67 +551,69 @@ $brands = brands();
         <!-- end why-chooses-section -->
 
         <!-- start events section -->
-        {{-- <section class="events-section pb-60">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.insights')}}</h2>
-                    <h3 class="fs-2 fw-6 mb-60">{{__('messages.event.events')}}</h3>
-                </div>
-                <div class="row">
-                    @foreach($data['events'] as $event)
-                        @if($event->status == App\Models\Event::PUBLISHED)
-                            <div class="col-xl-4 col-lg-6 col-12 mb-2">
-                                <div class="card h-100">
-                                    <div class="positon-relative">
-                                        <div class="card-img">
-                                            <a href="{{ route('landing.event.detail',$event->slug) }}">
-                                                <img src="{{ !empty($event->image_url) ? $event->image_url : asset('front_landing/images/events-1.png') }}"
-                                                    class="card-img-top object-fit-cover" alt="card">
-                                            </a>
-                                        </div>
-                                        <div class="small-btn d-flex flex-column justify-content-center align-items-center">
-                                            <span class="fs-26 fw-6 ">{{ Carbon\Carbon::parse($event->event_date)->format('d') }}</span>
-                                            <span class="fs-14 fw-5 "> {{ Carbon\Carbon::parse($event->event_date)->format('M') }}
-                                                {{ Carbon\Carbon::parse($event->event_date)->format('Y') }}</span>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title mb-2 d-flex flex-wrap justify-content-between align-items-center ">
-                                            <div class="pe-sm-0">
-                                                <h4 class="fs-20 fw-6 text-dark"><a class="text-dark"
-                                                                                    href="{{ route('landing.event.detail',$event->slug) }}">{{ $event->title }}</a>
-                                                </h4>
-                                                <div class="mb-2">
-                                                    <i class="fa-solid fa-location-dot text-primary me-2"></i>
-                                                    <span class="fs-16 fw-5 text-primary">{{ $event->venue }}</span>
-                                                </div>
+        @if(!empty($data['events']))
+            <section class="events-section pb-60">
+                <div class="container">
+                    <div class="text-center">
+                        {{-- <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.insights')}}</h2> --}}
+                        <h3 class="fs-2 fw-6 mb-60">{{__('messages.event.events')}}</h3>
+                    </div>
+                    <div class="row">
+                        @foreach($data['events'] as $event)
+                            @if($event->status == App\Models\Event::PUBLISHED)
+                                <div class="col-xl-4 col-lg-6 col-12 mb-2">
+                                    <div class="card h-100">
+                                        <div class="positon-relative">
+                                            <div class="card-img">
+                                                <a href="{{ route('landing.event.detail',$event->slug) }}">
+                                                    <img src="{{ !empty($event->image_url) ? $event->image_url : asset('front_landing/images/events-1.png') }}"
+                                                        class="card-img-top object-fit-cover" alt="card">
+                                                </a>
                                             </div>
-
-                                            @if($event->event_date >= \Carbon\Carbon::now()->format('Y-m-d'))
-                                                <div class="button">
-                                                    <a type="button" class="btn btn-gray bookSeatBtn" data-bs-toggle="modal"
-                                                    data-bs-target="#bookSeatModalShow"
-                                                    data-bs-whatever="@mdo"
-                                                    data-id="{{ $event->id }}">{{__('messages.front_landing.book_your_seat')}}</a>
+                                            <div class="small-btn d-flex flex-column justify-content-center align-items-center">
+                                                <span class="fs-26 fw-6 ">{{ Carbon\Carbon::parse($event->event_date)->format('d') }}</span>
+                                                <span class="fs-14 fw-5 "> {{ Carbon\Carbon::parse($event->event_date)->format('M') }}
+                                                    {{ Carbon\Carbon::parse($event->event_date)->format('Y') }}</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-title mb-2 d-flex flex-wrap justify-content-between align-items-center ">
+                                                <div class="pe-sm-0">
+                                                    <h4 class="fs-20 fw-6 text-dark"><a class="text-dark"
+                                                                                        href="{{ route('landing.event.detail',$event->slug) }}">{{ $event->title }}</a>
+                                                    </h4>
+                                                    <div class="mb-2">
+                                                        <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                                                        <span class="fs-16 fw-5 text-primary">{{ $event->venue }}</span>
+                                                    </div>
                                                 </div>
-                                            @else
-                                                <p class="text-danger">Event already expired.</p>
-                                            @endif
-                                            @include('front_landing.book_seat')
+
+                                                @if($event->event_date >= \Carbon\Carbon::now()->format('Y-m-d'))
+                                                    <div class="button">
+                                                        <a type="button" class="btn btn-gray bookSeatBtn" data-bs-toggle="modal"
+                                                        data-bs-target="#bookSeatModalShow"
+                                                        data-bs-whatever="@mdo"
+                                                        data-id="{{ $event->id }}">{{__('messages.front_landing.book_your_seat')}}</a>
+                                                    </div>
+                                                @else
+                                                    <p class="text-danger">Event already expired.</p>
+                                                @endif
+                                                @include('front_landing.book_seat')
+
+                                            </div>
+                                            <p class="text-dark fs-16 fw-5">
+                                                {{ strlen( $event->description ) > 100 ? substr($event->description,0, 200).'.....': $event->description }}
+                                            </p>
 
                                         </div>
-                                        <p class="text-dark fs-16 fw-5">
-                                            {{ strlen( $event->description ) > 100 ? substr($event->description,0, 200).'.....': $event->description }}
-                                        </p>
-
                                     </div>
                                 </div>
-                            </div>
-                        @endif
-                    @endforeach
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
-            </div>
-        </section> --}}
+            </section>
+        @endif
         <!-- end events section -->
 
         <!-- start news-feeds-section -->

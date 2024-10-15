@@ -65,10 +65,16 @@
                                         class="nav-link  fw-5  fs-14 {{ Request::is('page/'.$page->id) ? 'active' : '' }}">{!! nl2br( \Illuminate\Support\Str::limit($page->name) ) !!}</a>
                                     </li>
                                 @endif
+                                @if($page->is_active && $page->name == 'Careers')
+                                    <li class="nav-item">
+                                        <a href="{{ route('landing.page.detail',$page->id) }}"
+                                        class="nav-link  fw-5  fs-14 {{ Request::is('page/'.$page->id) ? 'active' : '' }}">{!! nl2br( \Illuminate\Support\Str::limit($page->name) ) !!}</a>
+                                    </li>
+                                @endif
                             @endforeach
-                            {{-- <li class="nav-item"><a href="{{ route('landing.event') }}"
+                            <li class="nav-item"><a href="{{ route('landing.event') }}"
                                 class="nav-link  fw-5  fs-14 {{ Request::is('events','event-details/*') ? 'active' : '' }}">{{__('messages.events.events')}}</a>
-                            </li> --}}
+                            </li>
                             {{-- <li class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('news','news-details*') ? 'active' : '' }}"
                                    href="{{ route('landing.news') }}">{{__('messages.news.news')}}</a>
@@ -156,11 +162,21 @@
                                         class="nav-link  fw-5 fs-14 {{ Request::is('page/'.$page->id) ? 'active' : '' }}">{{ $page->name }}</a>
                                     </div>
                                 @endif
+                                @if($page->is_active && $page->name == 'Careers')
+                                    <div class="nav-item">
+                                        <a href="{{ route('landing.page.detail',$page->id) }}"
+                                        class="nav-link  fw-5 fs-14 {{ Request::is('page/'.$page->id) ? 'active' : '' }}">{{ $page->name }}</a>
+                                    </div>
+                                @endif
                             @endforeach
 
                             <div class="nav-item">
                                 <a class="nav-link  fw-5 fs-14 {{ Request::is('teams') ? 'active' : '' }}"
                                    href="{{ route('landing.team') }}">{{__('messages.front_landing.team')}}</a>
+                            </div>
+                            <div class="nav-item">
+                                <a class="nav-link  fw-5 fs-14 {{ Request::is('events','event-details/*') ? 'active' : '' }}"
+                                   href="{{ route('landing.event') }}">{{__('messages.event.events')}}</a>
                             </div>
                             <div class="nav-item">
                                 <a class="nav-link  fw-5  fs-14 {{ Request::is('contact-us') ? 'active' : '' }}"
