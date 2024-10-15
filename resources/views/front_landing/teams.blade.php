@@ -38,7 +38,7 @@
                                 <!-- Description below the image for mobile -->
                                 <div class="card-body d-flex flex-column justify-content-center">
                                     <h4 class="fs-18 fw-5">{{ $team->name }}</h4>
-                                    <h5 class="badge rounded-pill bg-primary fs-14 fw-5 mb-0" style="width:200px">{{ $team->designation }}</h5>
+                                    <h5 class="@if(empty($team->designation) || $team->designation == '-') text-primary @else badge rounded-pill bg-primary @endif fs-14 fw-5 mb-0" style="width:200px">{{ $team->designation }}</h5>
                                     <p>{{ $team->description }}</p>
                                 </div>
                             </div>
