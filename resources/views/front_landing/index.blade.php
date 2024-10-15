@@ -551,7 +551,7 @@ $brands = brands();
         <!-- end why-chooses-section -->
 
         <!-- start events section -->
-        @if(!empty($data['events']))
+        @if(!empty($data['events']) && $data['events']->count() > 0)
             <section class="events-section pb-60">
                 <div class="container">
                     <div class="text-center">
