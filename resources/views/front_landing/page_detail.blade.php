@@ -6,7 +6,7 @@
     <div class="blog-page">
         <!-- start hero-section -->
         <section class="hero-section">
-            @if ($page->name == 'Admissions')
+            @if ($page->name == 'Admissions' || $page->name == 'Careers')
                 <div class="inner-bgimg position-relative"
                     style="background: url('{{ asset('front_landing/images/hero-image-2.jpeg') }}') no-repeat right !important;">
             @else
