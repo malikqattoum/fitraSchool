@@ -216,9 +216,9 @@ $brands = brands();
                         <div class="about-left">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="about-1">
-                                        <img src="{{ asset('front_landing/images/Red and Yellow Collage Illustrative Learning for Kids Infographic_page-0001.jpg') }}" width="500" height="840">
-                                    </div>
+                                    {{-- <div class="about-1"> --}}
+                                        <img src="{{ asset('front_landing/images/Red and Yellow Collage Illustrative Learning for Kids Infographic_page-0001.jpg') }}" width="500" height="840" style="border-radius: 5px">
+                                    {{-- </div> --}}
                                     {{--
                                         <img src="{{$data['aboutUs']['image_1'] ? : asset('front_landing/images/about-1.png')}}"
                                                 class="w-100 h-100 object-fit-cover">
