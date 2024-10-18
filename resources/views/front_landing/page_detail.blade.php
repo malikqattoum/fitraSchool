@@ -3,6 +3,51 @@
     {{ __('messages.pages') }}
 @endsection
 @section('content')
+@if ($page->name == 'Careers')
+<style>
+    .job-posting {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    h1 {
+        color: #51246d;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #333;
+    }
+    ul {
+        list-style-type: disc; /* Ensure bullets are displayed */
+        margin-left: 20px; /* Add space for bullet indentation */
+        padding-left: 20px; /* Add padding to show bullet points properly */
+    }
+    li {
+        margin-bottom: 10px; /* Add some space between list items */
+        list-style: inside;
+    }
+    a {
+        color: #0563c1;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .contact-info {
+        font-weight: bold;
+        color: #0563c1;
+    }
+</style>
+@endif
     <div class="blog-page">
         <!-- start hero-section -->
         <section class="hero-section">
@@ -101,7 +146,7 @@
                                 <a href="mailto:info@fitraschool.ca" class="contact-info">info@fitraschool.ca</a>.
                             </p>
                         </div>
-                        <hr>
+
                         <div class="job-posting">
                             <h1>Job Posting: Part-Time Islamic Studies Teacher</h1>
 
