@@ -60,6 +60,90 @@
         <section class="blog-section pt-100 pb-100">
             <div class="container">
                 <p class="fs-16 fw-5 text-dark mb-4 pb-lg-2">
+                    @if ($page->name == 'Careers')
+                        <div class="job-posting">
+                            <h1>Job Posting: Part-Time Quran Teacher</h1>
+
+                            <p><strong>Position:</strong> Part-Time Quran Teacher</p>
+                            <p><strong>Location:</strong> Fitra School</p>
+                            <p><strong>Hours:</strong> Flexible, part-time hours</p>
+
+                            <p>
+                                Fitra School is seeking a passionate and dedicated Quran teacher who goes beyond traditional Quran memorization.
+                                We are looking for an educator who inspires students to engage in <em>Tadabur</em> (understanding and reflecting
+                                on Quranic verses) and encourages them to apply these lessons to their everyday lives. The ideal candidate will
+                                nurture the development of strong Muslim character through the teachings of the Quran, creating an environment
+                                where students not only memorize the Quran but also live by its values.
+                            </p>
+
+                            <p class="section-title">Key Responsibilities:</p>
+                            <ul>
+                                <li>Teach Quran with a focus on understanding and application in daily life.</li>
+                                <li>Inspire students to develop a connection with the Quran and foster love for its teachings.</li>
+                                <li>Build strong Muslim character based on the Quran’s guidance.</li>
+                                <li>Implement creative teaching techniques to engage students in reflection and discussion.</li>
+                                <li>Create a positive and respectful classroom environment.</li>
+                            </ul>
+
+                            <p class="section-title">Qualifications:</p>
+                            <ul>
+                                <li>Excellent communication and interpersonal skills in English.</li>
+                                <li>Fluency in English is an asset.</li>
+                                <li>Proficiency in Quran recitation and <em>Tajweed</em>.</li>
+                                <li>Strong understanding of the Quran and ability to teach <em>Tadabur</em>.</li>
+                                <li>Prior teaching experience, preferably with children.</li>
+                                <li>Passion for Islamic education and character building.</li>
+                            </ul>
+
+                            <p class="section-title">How to Apply:</p>
+                            <p>
+                                Please email your resume and cover letter to
+                                <a href="mailto:info@fitraschool.ca" class="contact-info">info@fitraschool.ca</a>.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="job-posting">
+                            <h1>Job Posting: Part-Time Islamic Studies Teacher</h1>
+
+                            <p><strong>Position:</strong> Part-Time Islamic Studies Teacher</p>
+                            <p><strong>Location:</strong> Fitra School</p>
+                            <p><strong>Hours:</strong> Flexible, part-time hours</p>
+
+                            <p>
+                                Fitra School is seeking an enthusiastic Islamic Studies teacher who is passionate about imparting Islamic knowledge
+                                and values to young minds. The ideal candidate will help students develop a strong foundation in Islamic teachings
+                                while fostering an understanding of how to integrate these principles into their lives. The role involves creating
+                                an engaging and interactive learning environment that encourages curiosity, reflection, and a deeper connection to
+                                their Muslim identity.
+                            </p>
+
+                            <p class="section-title">Key Responsibilities:</p>
+                            <ul>
+                                <li>Teach Islamic Studies covering key subjects such as Fiqh, Seerah, Aqeedah, and Islamic history.</li>
+                                <li>Help students understand and apply Islamic teachings in a practical and meaningful way.</li>
+                                <li>Develop lesson plans that are both informative and engaging.</li>
+                                <li>Foster a positive and respectful learning environment.</li>
+                                <li>Instill the love of Islam and shape a proud Muslim with an outstanding Islamic identity.</li>
+                                <li>Encourage students to reflect on Islamic values and implement them in their lives.</li>
+                            </ul>
+
+                            <p class="section-title">Qualifications:</p>
+                            <ul>
+                                <li>Excellent communication and interpersonal skills in English.</li>
+                                <li>Fluency in English is an asset.</li>
+                                <li>Strong background in Islamic Studies.</li>
+                                <li>Prior experience teaching Islamic Studies, preferably to children.</li>
+                                <li>Passion for education and character building.</li>
+                                <li>Excellent communication and interpersonal skills.</li>
+                            </ul>
+
+                            <p class="section-title">How to Apply:</p>
+                            <p>
+                                Please email your resume and cover letter to
+                                <a href="mailto:info@fitraschool.ca" class="contact-info">info@fitraschool.ca</a>.
+                            </p>
+                        </div>
+                    @endif
                     {!! nl2br($page->description) !!}
                 </p>
 
