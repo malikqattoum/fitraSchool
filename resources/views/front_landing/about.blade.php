@@ -36,7 +36,7 @@ $settings = settings();
                             <div class="row">
                                 <div class="col-md-6">
                                     {{-- <div class="about-1"> --}}
-                                        <img src="{{ asset('front_landing/images/Red and Yellow Collage Illustrative Learning for Kids Infographic_page-0001.jpg') }}" width="500" height="840" style="border-radius: 5px">
+                                        <img src="{{ asset('front_landing/images/Red and Yellow Collage Illustrative Learning for Kids Infographic_page-0001.jpg') }}" width="400" height="840" style="border-radius: 5px">
                                         {{-- <img src="{{ $aboutUs['image_1'] ? :asset('front_landing/images/about-us1.png')}}"
                                              class="w-100 h-100 object-fit-cover"> --}}
                                     {{-- </div> --}}
