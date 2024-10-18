@@ -110,7 +110,7 @@
                             <h1>Job Posting: Part-Time Quran Teacher</h1>
 
                             <p><strong>Position:</strong> Part-Time Quran Teacher</p>
-                            <p><strong>Location:</strong> Fitra School</p>
+                            <p><strong>Location:</strong> Fitra School, 1496 Stittsville Main St, Ottawa, ON K2S 1E3</p>
                             <p><strong>Hours:</strong> Flexible, part-time hours</p>
 
                             <p>
@@ -151,7 +151,7 @@
                             <h1>Job Posting: Part-Time Islamic Studies Teacher</h1>
 
                             <p><strong>Position:</strong> Part-Time Islamic Studies Teacher</p>
-                            <p><strong>Location:</strong> Fitra School</p>
+                            <p><strong>Location:</strong> Fitra School, 1496 Stittsville Main St, Ottawa, ON K2S 1E3</p>
                             <p><strong>Hours:</strong> Flexible, part-time hours</p>
 
                             <p>
