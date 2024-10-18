@@ -37,7 +37,7 @@
                         <ul class="list-group">
                             <li class="list-group-item">Year 2024-2025</li>
                             <li class="list-group-item">Daily schedule (9:00 AM - 3:30 PM).</li>
-                            <li class="list-group-item">Grades from JK to Gr.4</li>
+                            <li class="list-group-item">Grades from JK to Gr.5</li>
                         </ul>
                     </div>
                 </div>
