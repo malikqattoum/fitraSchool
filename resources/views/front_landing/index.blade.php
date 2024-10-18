@@ -217,9 +217,12 @@ $brands = brands();
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="about-1">
+                                        <img src="{{ asset('front_landing/images/Red and Yellow Collage Illustrative Learning for Kids Infographic_page-0001.jpg') }}" width="500" height="840">
+                                    </div>
+                                    {{--
                                         <img src="{{$data['aboutUs']['image_1'] ? : asset('front_landing/images/about-1.png')}}"
                                                 class="w-100 h-100 object-fit-cover">
-                                    </div>
+                                    </div> --}}
                                     {{-- <div class="about-content-box bg-primary ">
                                         <div class="about-content d-flex flex-column align-items-center justify-content-center ">
                                             <h2 class="number-big text-white fs-1 fw-6 counter"
@@ -230,12 +233,12 @@ $brands = brands();
                                         </div>
                                     </div> --}}
                                 </div>
-                                <div class="col-md-6 d-md-flex align-items-center">
+                                {{-- <div class="col-md-6 d-md-flex align-items-center">
                                     <div class="about-2">
                                         <img src="{{$data['aboutUs']['image_2'] ? : asset('front_landing/images/about-2.png')}}"
                                                 class="w-100 h-100 object-fit-cover">
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
