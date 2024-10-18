@@ -33,10 +33,21 @@ $settings = settings();
                 <div class="row">
                     <div class="col-xxl-6 col-xl-7 col-lg-8">
                         <div class="about-left">
-                            <div class="row">
-                                <div class="col-md-6">
+                            {{-- <div class="row"> --}}
+                                {{-- <div class="col-md-6"> --}}
                                     {{-- <div class="about-1"> --}}
-                                        <img src="{{ asset('front_landing/images/Red and Yellow Collage Illustrative Learning for Kids Infographic_page-0001.jpg') }}" height="840" style="border-radius: 5px">
+                                        <section class="principal-message">
+                                            <div class="message-content">
+                                                <h2 class="message-title">{{__('messages.front_landing.principals_message')}}</h2>
+                                                <p>
+                                                    Assalamu Alaikum,<br><br>
+                                                    Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child. As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals. This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life <b>(khilafa on earth)</b>.<br><br>
+                                                    Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam. We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.<br><br>
+                                                    I am honored to work with a passionate and dedicated team that shares this vision. We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.<br><br>
+                                                </p>
+                                                <p class="signature">Reem Yousef<br>Principal, Fitra School</p>
+                                            </div>
+                                        </section>
                                         {{-- <img src="{{ $aboutUs['image_1'] ? :asset('front_landing/images/about-us1.png')}}"
                                              class="w-100 h-100 object-fit-cover"> --}}
                                     {{-- </div> --}}
@@ -49,32 +60,21 @@ $settings = settings();
                                             <p class="mb-0 text-white fs-14 fw-5">{{__('messages.about_us.years_of_exp')}}</p>
                                         </div>
                                     </div> --}}
-                                </div>
+                                {{-- </div> --}}
                                 {{-- <div class="col-md-6 d-md-flex align-items-center">
                                     <div class="about-2">
                                         <img src="{{$aboutUs['image_2']  ? : asset('front_landing/images/about-us2.png')}}"
                                              class="w-100 h-100 object-fit-cover">
                                     </div>
                                 </div> --}}
-                            </div>
+                            {{-- </div> --}}
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-5 col-lg-4 mt-lg-0 mt-sm-5 mt-4">
                         <div class="about-right">
                             {{-- <p class="text-primary fs-16 fw-6 mb-3 pb-1">{{__('messages.about_us.about_us')}}</p> --}}
                             {{-- <h2 class="text-dark fw-6 mb-3 pb-1">{{ $aboutUs['title'] }}</h2> --}}
-                            <section class="principal-message">
-                                <div class="message-content">
-                                    <h2 class="message-title">{{__('messages.front_landing.principals_message')}}</h2>
-                                    <p>
-                                        Assalamu Alaikum,<br><br>
-                                        Welcome to Fitra School, where we are blessed to take on board the noble journey of nurturing the Fitra—the innate goodness that Allah has placed in every child. As Muslims, we have been taught by our beloved Prophet Muhammad (peace be upon him) that building strong nations begins with educated and morally grounded individuals. This is our mission at Fitra School: to shape a generation of students who are not only knowledgeable but also deeply connected to their faith and their purpose in life <b>(khilafa on earth)</b>.<br><br>
-                                        Through our unique Tamkeen program and blended subjects’ curriculum, students gain hands-on experience in entrepreneurship, coding, creative arts, and more, all while being deeply rooted to Islam. We are equipping our students with the tools they need to become the future leaders, thinkers, and change-makers of our Ummah.<br><br>
-                                        I am honored to work with a passionate and dedicated team that shares this vision. We are committed to shaping young minds to carry the weight of responsibility and leadership—ready to excel in both this world and the hereafter, insha’Allah.<br><br>
-                                    </p>
-                                    <p class="signature">Reem Yousef<br>Principal, Fitra School</p>
-                                </div>
-                            </section>
+                            <img src="{{ asset('front_landing/images/Red and Yellow Collage Illustrative Learning for Kids Infographic_page-0001.jpg') }}" height="840" style="border-radius: 5px">
                         </div>
                     </div>
                 </div>
