@@ -7,7 +7,7 @@
         <!-- start hero-section -->
         <section class="hero-section">
             <div class="inner-bgimg  position-relative"
-                 style="background: url('{{asset('front_landing/images/causes-hero-img.png')}}');">
+                 style="background: url('{{ asset('front_landing/images/hero-image-payment.jpeg') }}') no-repeat right !important;">
                 <div class="container">
                     <div class="row ">
                         <div class="col-lg-6 col-md-7 parallelogram-shape">
