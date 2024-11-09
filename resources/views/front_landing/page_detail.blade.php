@@ -92,8 +92,7 @@
                 <div class="container">
                     <div class="row">
                         <ul class="list-group">
-                            <li class="list-group-item">Tuition fees: Kindergarten $550, Grades 1-5 $500, plus resource fees of $250 per year.</li>
-                            <li class="list-group-item">Registration link for 2024-2025 <a href="https://form.jotform.com/242304365892257" target="_blank" class="btn btn-primary">Register</a></li>
+                            <li class="list-group-item">Tuition fees: Kindergarten $475, Grades 1-5 $475, plus resource fees of $250 per year.</li>
                             <li class="list-group-item">2024-2025 January enrolment. <a href="https://forms.gle/dibdSyz7QKTucFd17" target="_blank" class="btn btn-primary">Register</a></li>
                         </ul>
                     </div>
