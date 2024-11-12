@@ -42,6 +42,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Testimonial;
 
 class LandingController extends AppBaseController
 {
@@ -58,34 +59,25 @@ class LandingController extends AppBaseController
         if ($settings['active_homepage_status'] == Setting::STATUS_HOMEPAGE_1) {
             $data['events'] = Event::all();
         } else {
-            $data['events'] = Event::with('eventCategory')->where('event_date', '>=',
-                Carbon::now())->latest()->take(3)->get();
+            $data['events'] = Event::with('eventCategory')
+                ->where('event_date', '>=', Carbon::now())
+                ->latest()
+                ->take(3)
+                ->get();
         }
 
         $data['sliderCard'] = SliderCard::pluck('value', 'key')->toArray();
-
         $data['teams'] = Team::latest()->take(4)->get();
-
         $data['faqs'] = Faqs::latest()->take(3)->get();
-
         $data['videoSection'] = VideoSection::pluck('value', 'key');
-
         $data['homepageTwoVideo'] = SecondVideoSection::pluck('value', 'key');
-
         $data['homepageThreeVideo'] = ThirdVideoSection::pluck('value', 'key');
-
         $data['aboutUs'] = AboutUs::pluck('value', 'key')->toArray();
-
         $data['sliders'] = FrontSlider::all();
-
         $data['homepageTwoSliders'] = FrontSlider2::all();
-
         $data['homepageThreeSliders'] = FrontSliderThird::all();
-
         $data['homepageTwoCategories'] = Category::pluck('value', 'key');
-
         $data['homepageThreeCategories'] = CategoryThird::all();
-
         $data['campaignsCategories'] = CampaignCategory::withCount([
             'campaigns' => function ($q) {
                 $q->where('status', '=', Campaign::STATUS_ACTIVE);
@@ -93,14 +85,18 @@ class LandingController extends AppBaseController
         ])->get();
 
         $data['latestNewsFeeds'] = News::with('newsCategory')->latest()->first();
-
         $data['oldNewsFeeds'] = News::where('id', '!=',
             $data['latestNewsFeeds'] != null ? $data['latestNewsFeeds']->id : '')->limit(3)->get();
-
-        $data['campaigns'] = Campaign::with('campaignCategory', 'user')->where('status',
-            Campaign::STATUS_ACTIVE)->latest()->take(6)->orderBy('is_emergency', 'desc')->get();
-
+        $data['campaigns'] = Campaign::with('campaignCategory', 'user')
+            ->where('status', Campaign::STATUS_ACTIVE)
+            ->latest()
+            ->take(6)
+            ->orderBy('is_emergency', 'desc')
+            ->get();
         $data['brands'] = Brand::all();
+
+        // Add testimonials data here
+        $data['testimonials'] = Testimonial::latest()->take(6)->get();
 
         return view("front_landing.$homepage", compact('data'));
     }

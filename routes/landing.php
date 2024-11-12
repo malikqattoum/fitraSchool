@@ -10,6 +10,7 @@ use App\Http\Controllers\PaypalPayoutController;
 use App\Http\Controllers\StripeController;
 use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestimonialController;
 
 Route::middleware(['xss'])->group(function () {
     Route::get('/', [LandingController::class, 'home'])->name('landing.home');
@@ -47,4 +48,7 @@ Route::middleware(['xss'])->group(function () {
     Route::get('paypal-payment-failed', [PaypalController::class, 'failed'])->name('paypal.failed');
 
     Route::get('paypal-payout', [PaypalPayoutController::class, 'payout'])->name('paypal.payout');
+
+    Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
+    Route::post('/testimonials', [TestimonialController::class, 'store'])->name('testimonials.store');
 });

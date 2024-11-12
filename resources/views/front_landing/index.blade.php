@@ -8,6 +8,11 @@ $brands = brands();
 @endsection
 @php $styleCss = 'style'; @endphp
 @section('content')
+    <style>
+        .btn-outline-primary:hover {
+            color: #fff !important;
+        }
+    </style>
     <div class="home-page">
         <!-- start hero-section -->
         <section class="hero-section">
@@ -558,7 +563,7 @@ $brands = brands();
                 <div class="container">
                     <div class="text-center">
                         {{-- <h2 class="fs-6 fw-6 text-primary">{{__('messages.front_landing.insights')}}</h2> --}}
-                        <h3 class="fs-2 fw-6 mb-60">{{__('messages.event.events')}}</h3>
+                        <h3 class="fs-2 fw-6 mb-60 text-primary">{{__('messages.event.events')}}</h3>
                     </div>
                     <div class="row">
                         @foreach($data['events'] as $event)
@@ -616,6 +621,32 @@ $brands = brands();
                 </div>
             </section>
         @endif
+
+        <section class="container mt-5">
+            <h2 class="text-center text-primary">Parent Testimonials</h2>
+            <p class="text-center mb-4">See what parents are saying about us!</p>
+
+            <div class="row">
+                @forelse($data['testimonials'] as $testimonial)
+                    <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                        <div class="card shadow-sm w-100">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">{{ $testimonial->parent_name }}</h5>
+                                <p class="card-text">{{ Str::limit($testimonial->testimonial, 150) }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @empty
+                    <p class="text-center">No testimonials available at the moment.</p>
+                @endforelse
+            </div>
+
+            <!-- Link to view all testimonials -->
+            <div class="text-center mt-4">
+                <a href="{{ route('testimonials.index') }}" class="btn btn-outline-primary" style="color: #732B91; border-color: #732B91;">View all or Add Parent Testimonials</a>
+            </div>
+        </section>
+
         <!-- end events section -->
 
         <!-- start news-feeds-section -->
