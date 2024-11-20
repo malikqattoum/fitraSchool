@@ -30,9 +30,11 @@
                     <div class="col-lg-8">
                         <div class="crystal-img rounded-10 mb-40">
                             <img src="{{ !empty($event->image_url) ? $event->image_url : url('front_landing/images/events-2.png') }}"
-                                 class="w-100 h-100 object-fit-cover ">
+                                 class="w-100 h-100">
                         </div>
-                        <p class="fs-16 fw-5 text-dark">{{ $event->description }}</p>
+                        <p class="fs-16 fw-5 text-dark">
+                            {!! Str::of($event->description)->replaceMatches('/(https?:\/\/[^\s]+)/', '<a href="$1" target="_blank">$1</a>')->replace("\n", '<br>') !!}
+                        </p>
                     </div>
                     <div class="col-lg-4">
                         <div class="crystal-events bg-light p-30 rounded-10">
@@ -57,19 +59,27 @@
                                 <a href="tel:{{ $event->event_organizer_phone }}"
                                    class="fs-16 fw-5 text-dark mb-0">{{ $event->event_organizer_phone ? $event->event_organizer_phone : 'N/A' }}</a>
                             </div>
-                            <div class="d-flex flex-wrap  align-items-center mb-40">
+                            @if($link)
+                                <div class="d-flex flex-wrap  align-items-center mb-3 pb-1">
+                                    <div class="icon rounded-10 d-flex justify-content-center align-items-center me-3">
+                                        <i class="fa-solid fa-link text-primary "></i>
+                                    </div>
+                                    <a class="fs-16 fw-5 text-dark mb-0" href="{{ $link }}" target="_blank">{{ $link }}</a>
+                                </div>
+                            @endif
+                            {{-- <div class="d-flex flex-wrap  align-items-center mb-40">
                                 <div class="icon rounded-10 d-flex justify-content-center align-items-center me-3">
                                     <i class="fa-solid text-primary">{{ $event->available_tickets }}</i>
                                 </div>
                                 <a class="fs-16 fw-5 text-dark mb-0">{{__('messages.front_landing.available_seats')}}</a>
-                            </div>
+                            </div> --}}
 
                             @if($event->event_date >= \Carbon\Carbon::now()->format('Y-m-d'))
-                            <div class="button">
+                            {{-- <div class="button">
                                 <a type="button" class="btn btn-primary w-100  bookSeatBtn" data-bs-toggle="modal"
                                    data-bs-target="#bookSeatModalShow"
                                    data-id="{{ $event->id }}">{{__('messages.front_landing.book_your_seat')}}</a>
-                            </div>
+                            </div> --}}
                             @else
                                 <p class="text-danger">Event already expired.</p>
                             @endif

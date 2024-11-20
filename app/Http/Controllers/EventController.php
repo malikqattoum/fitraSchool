@@ -139,7 +139,11 @@ class EventController extends AppBaseController
      */
     public function eventDetail(Event $event)
     {
-        return view('front_landing.events_detail', compact('event'));
+        preg_match('/(https?:\/\/[^\s]+)/', $event->description, $matches);
+
+        // Extracted link or null if not found
+        $link = $matches[0] ?? null;
+        return view('front_landing.events_detail', compact('event', 'link'));
     }
 
     /**
