@@ -596,12 +596,12 @@ $brands = brands();
                                                 </div>
 
                                                 @if($event->event_date >= \Carbon\Carbon::now()->format('Y-m-d'))
-                                                    <div class="button">
+                                                    {{-- <div class="button">
                                                         <a type="button" class="btn btn-gray bookSeatBtn" data-bs-toggle="modal"
                                                         data-bs-target="#bookSeatModalShow"
                                                         data-bs-whatever="@mdo"
                                                         data-id="{{ $event->id }}">{{__('messages.front_landing.book_your_seat')}}</a>
-                                                    </div>
+                                                    </div> --}}
                                                 @else
                                                     <p class="text-danger">Event already expired.</p>
                                                 @endif
