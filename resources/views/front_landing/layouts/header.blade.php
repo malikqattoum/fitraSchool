@@ -15,7 +15,7 @@
             </div>
             <div class="col-lg-1 col-2 text-center">
                 <div class="header-logo">
-                    <img src="{{ asset('front_landing/images/SMA-logo.png')}}" alt="sma-logo" width="60%" style="margin-top:20%; margin-left:50%">
+                    <img class="sma-logo" src="{{ asset('front_landing/images/SMA-logo.png')}}" alt="sma-logo">
                 </div>
             </div>
             <div class="col-lg-10 col-8 ">
