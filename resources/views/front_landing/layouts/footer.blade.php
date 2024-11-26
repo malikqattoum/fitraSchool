@@ -48,7 +48,13 @@
                         </form>
                     </div>
 
-
+                    <div class="row">
+                        <div class="col">
+                            <p class="mt-4">
+                                <a class="text-white" target="_blank" href="{{ asset('front_landing/pdf/Privacy Policy for Fitra School.pdf') }}">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </div>
                     <div class="social-icon d-flex mt-4 pt-lg-2">
                         <div class="icon d-flex align-items-center justify-content-center me-sm-4 me-3">
                             <a href="{{ $settings['facebook_url'] }}" target="_blank">
