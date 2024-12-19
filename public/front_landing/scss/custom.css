@@ -908,3 +908,16 @@ a {
 .news-right-section .popular-tags .tags .tag:hover a, .news-right-section .popular-tags .tags .tag .active a {
     color: #fff !important
 }
+
+.sma-logo {
+    margin-left: 40%;
+    margin-top:20%;
+    width: 60%;
+}
+
+/* Adjust margin-left for mobile screens */
+@media (max-width: 768px) {
+    .sma-logo {
+        margin-left: 50%;
+    }
+}

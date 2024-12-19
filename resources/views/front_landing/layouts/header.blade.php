@@ -5,15 +5,20 @@
 <header>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-1 col-4">
+            <div class="col-lg-1 col-2">
                 <div class="header-logo">
                     <a href="{{ route('landing.home') }}">
                         <img src="{{ getLogoUrl() ? : asset('front_landing/images/funding-logo.png')}}" alt="Jobs"
-                             class="w-100 h-100"/>
+                                class="w-100 h-100"/>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-11 col-8 ">
+            <div class="col-lg-1 col-2 text-center">
+                <div class="header-logo">
+                    <img class="sma-logo" src="{{ asset('front_landing/images/SMA-logo.png')}}" alt="sma-logo">
+                </div>
+            </div>
+            <div class="col-lg-10 col-8 ">
                 <nav class="navbar navbar-expand-lg navbar-dark justify-content-end py-0">
                     <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
