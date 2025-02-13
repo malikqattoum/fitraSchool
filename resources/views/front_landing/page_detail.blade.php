@@ -75,7 +75,7 @@
 
         @if ($page->name == 'Admissions')
             <!-- start Program-section -->
-            <section class="about-section pb-60 pt-60">
+            {{-- <section class="about-section pb-60 pt-60">
                 <div class="container">
                     <h2 class="text-primary d-flex  align-items-center justify-content-center mb-5">{{__('messages.front_landing.program')}}</h2>
                     <div class="row">
@@ -95,6 +95,25 @@
                             <li class="list-group-item">Tuition fees: Kindergarten $475, Grades 1-5 $475, plus resource fees of $250 per year.</li>
                             <li class="list-group-item">2024-2025 January enrolment. <a href="https://forms.gle/dibdSyz7QKTucFd17" target="_blank" class="btn btn-primary">Register</a></li>
                         </ul>
+                    </div>
+                </div>
+            </section> --}}
+
+            <section class="about-section pb-60 pt-60">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <img src="{{ asset('front_landing/images/fitraschool-enroll.jpeg') }}" style="width: 800px">
+                    </div>
+                    <div class="row">
+                        <h4 class="text-center">🌟 Registration Now Open for Fitra School 2025-2026!🌟</h4>
+                        <p>We are excited to announce that registration for the upcoming academic year is now open! Fitra School provides a nurturing and engaging environment where students thrive academically, spiritually, and socially.</p>
+                        <h5>💡 Why Fitra School?</h5>
+                        <p>✨ Strong focus on character development and Islamic values</p>
+                        <p>📚 Comprehensive curriculum based on Ontario standards</p>
+                        <p>🕌 Qur’an and reflection sessions</p>
+                        <p>🎓 Hands-on learning experiences to develop essential life skills</p>
+                        <p>Spots are limited, so secure your child’s place today!</p>
+                        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3OP-BS_7CM2AJcQR3cpa0RCZx57HXG1nzapQSiJ18kgMdBA/viewform" target="_blank" class="btn btn-primary">Register Now</a></p>
                     </div>
                 </div>
             </section>
