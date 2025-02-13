@@ -125,6 +125,72 @@
                 <p class="fs-16 fw-5 text-dark mb-4 pb-lg-2">
                     @if ($page->name == 'Careers')
                         <div class="job-posting">
+                            <h1>Job Posting: Arabic Teacher Position</h1>
+
+                            <p>
+                                SMA Fitra School is seeking an enthusiastic and creative <strong>Arabic Teacher</strong> to join our team! We are looking for someone who not only excels in teaching the Arabic language but also inspires students to <strong>love the language and culture</strong>, connecting it meaningfully to their deen.
+                            </p>
+
+                            <p class="section-title">Responsibilities</p>
+                            <ul>
+                                <li>Teach Arabic language in a dynamic and engaging manner.</li>
+                                <li>Design and implement <strong>hands-on, interactive activities</strong> that make learning Arabic fun and meaningful.</li>
+                                <li>Blend Arabic lessons with <strong>Islamic values and teachings</strong>, fostering a connection to the language through faith.</li>
+                                <li>Inspire a love for the Arabic language by introducing creative projects, games, and cultural experiences.</li>
+                                <li>Work collaboratively with colleagues to integrate Arabic learning into cross-curricular themes.</li>
+                                <li>Build a positive and inclusive classroom environment that encourages curiosity, participation, and confidence in using Arabic.</li>
+                            </ul>
+
+                            <p class="section-title">Qualifications</p>
+                            <ul>
+                                <li>Fluency in Arabic and <strong>excellent English communication skills</strong>.</li>
+                                <li>Proven experience in teaching Arabic with an emphasis on creativity and hands-on activities.</li>
+                                <li>A degree in Education, Arabic Studies, or a related field is preferred.</li>
+                                <li>Ability to inspire and engage students, making Arabic a subject they enjoy and look forward to.</li>
+                                <li>Strong organizational and interpersonal skills with a passion for nurturing young minds.</li>
+                            </ul>
+
+                            <p class="section-title">How to Apply</p>
+                            <p>
+                                If you’re passionate about teaching Arabic, creative in your approach, and eager to help students <strong>fall in love with the language</strong>, we’d love to hear from you! Please send your resume and a cover letter detailing your teaching philosophy and examples of your creative approaches to teaching Arabic to <a href="mailto:info@fitraschool.ca" class="contact-info">info@fitraschool.ca</a>.
+                            </p>
+                        </div>
+
+                        <div class="job-posting">
+                            <h1>Job Posting: Homeroom Teacher Position</h1>
+
+                            <p>
+                                SMA Fitra School is seeking an inspiring and creative <strong>Homeroom Teacher</strong> to join our team! We are looking for an educator who is passionate about nurturing young minds academically, socially, and spiritually, creating a classroom environment that reflects <strong>Islamic values</strong> and promotes a love of learning.
+                            </p>
+
+                            <p class="section-title">Responsibilities</p>
+                            <ul>
+                                <li>Teach a variety of core subjects, including literacy, numeracy, science, and social studies, using a student-centered approach.</li>
+                                <li>Foster a warm and inclusive classroom environment where students feel valued, supported, and inspired to learn.</li>
+                                <li>Incorporate <strong>Islamic teachings and values</strong> into the curriculum, promoting character development alongside academic achievement.</li>
+                                <li>Design and deliver <strong>hands-on, engaging lessons</strong> that cater to various learning styles and encourage creativity and critical thinking.</li>
+                                <li>Build strong relationships with students, parents, and colleagues to support students' overall development.</li>
+                                <li>Assess and track student progress, providing constructive feedback and tailoring instruction to individual needs.</li>
+                                <li>Plan and lead class activities that encourage teamwork, problem-solving, and a sense of community.</li>
+                            </ul>
+
+                            <p class="section-title">Qualifications</p>
+                            <ul>
+                                <li>A degree in Education or a related field.</li>
+                                <li>Prior experience as a classroom teacher is an asset.</li>
+                                <li>Strong understanding of child development and effective teaching practices.</li>
+                                <li>Excellent communication skills in English; proficiency in Arabic is an asset.</li>
+                                <li>Creative, enthusiastic, and committed to fostering a love of learning.</li>
+                                <li>Passionate about integrating <strong>Islamic values</strong> into teaching and learning.</li>
+                            </ul>
+
+                            <p class="section-title">How to Apply</p>
+                            <p>
+                                If you’re passionate about teaching, love working with children, and are committed to shaping the next generation through <strong>engaging and value-driven education</strong>, we’d love to hear from you! Please send your resume and a cover letter explaining your teaching philosophy and experiences to <a href="mailto:info@fitraschool.ca" class="contact-info">info@fitraschool.ca</a>.
+                            </p>
+                        </div>
+
+                        <div class="job-posting">
                             <h1>Job Posting: Part-Time Quran Teacher</h1>
 
                             <p><strong>Position:</strong> Part-Time Quran Teacher</p>
