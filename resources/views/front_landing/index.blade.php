@@ -12,6 +12,44 @@ $brands = brands();
         .btn-outline-primary:hover {
             color: #fff !important;
         }
+
+        .tickets-section {
+            background-image: url("{{ asset('front_landing/images/fitra-ramadan-iftar.webp') }}");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+        }
+
+        .tickets-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Adjust opacity for better contrast */
+            z-index: 1;
+        }
+
+        .tickets-section * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .tickets-section h1 {
+            font-size: 60px !important;
+            margin-bottom: 20px;
+        }
     </style>
     <div class="home-page">
         <!-- start hero-section -->
@@ -136,6 +174,16 @@ $brands = brands();
         </section> --}}
         <!-- end category-section -->
 
+        <section id="tickets" class="tickets-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Seeds of Legacy Iftar</h1>
+                        <a href="https://www.tickettailor.com/events/smafitraschool/1596709" class="btn btn-primary big-btn" target="_blank">Get Your Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- start overview section -->
         <section class="trending-causes-section bg-gray py-60 corner-decorated-section" data-aos="fade-left" data-aos-duration="1200">
             <div class="container">
