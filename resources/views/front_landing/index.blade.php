@@ -174,7 +174,7 @@ $brands = brands();
         </section> --}}
         <!-- end category-section -->
 
-        <section id="tickets" class="tickets-section">
+        {{-- <section id="tickets" class="tickets-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -183,7 +183,7 @@ $brands = brands();
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- start overview section -->
         <section class="trending-causes-section bg-gray py-60 corner-decorated-section" data-aos="fade-left" data-aos-duration="1200">
             <div class="container">
@@ -674,6 +674,15 @@ $brands = brands();
             <h2 class="text-center text-primary">Parent Testimonials</h2>
             <p class="text-center mb-4">See what parents are saying about us!</p>
 
+            <!-- Video added here -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="{{ asset('front_landing/videos/fitra_testimonials.mp4') }}" title="Parent Testimonials Video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 @forelse($data['testimonials'] as $testimonial)
                     <div class="col-md-4 mb-4 d-flex align-items-stretch">
@@ -688,7 +697,6 @@ $brands = brands();
                     <p class="text-center">No testimonials available at the moment.</p>
                 @endforelse
             </div>
-
             <!-- Link to view all testimonials -->
             <div class="text-center mt-4">
                 <a href="{{ route('testimonials.index') }}" class="btn btn-outline-primary" style="color: #732B91; border-color: #732B91;">View all or Add Parent Testimonials</a>
