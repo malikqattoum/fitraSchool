@@ -22,6 +22,48 @@
             </div>
         </section>
         <!-- end hero-section -->
+
+        <!-- start founder-section -->
+        <section class="pt-100 pb-50">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="founder-card card border-0 shadow-lg mb-5" style="border: 3px solid #0d6efd !important; background: linear-gradient(to bottom, #f8f9ff, #ffffff); border-radius: 15px !important;">
+                            <div class="card-body d-flex flex-column flex-md-row align-items-center p-5">
+                                <!-- Founder image -->
+                                <div class="founder-image-container mb-4 mb-md-0 me-md-4 text-center">
+                                    <img src="{{ asset('front_landing/images/muslim-woman.png') }}"
+                                         alt="Reem Yousef, Founder and Principal" class="rounded-circle border border-primary border-3 object-fit-cover"
+                                         style="width: 180px; height: 180px; padding: 5px; background: white;">
+                                    <div class="mt-3">
+                                        <span class="badge bg-primary fs-6 fw-bold px-4 py-2" style="font-size: 1rem !important;">FOUNDER</span>
+                                    </div>
+                                </div>
+
+                                <!-- Founder content -->
+                                <div class="founder-content text-center text-md-start flex-fill">
+                                    <h3 class="fw-bolder text-primary mb-3" style="font-size: 1.5rem;">Reem Yousef</h3>
+                                    <h4 class="fw-semibold text-dark mb-4" style="font-size: 1.2rem;">Founder and Principal</h4>
+                                    <div class="founder-message border-top pt-4" style="border-color: #dee2e6 !important;">
+                                        <p class="lead fs-6 fw-normal text-muted mb-0">
+                                            My name is Reem Yousef, Founder and Principal of Fitra School, an educational strategist, and entrepreneur.
+                                        </p>
+                                        <p class="mt-3 text-muted">
+                                            At Fitra, we believe education is not confined to textbooks. It begins by awakening curiosity, inviting deep reflection, and guiding hearts and minds toward purpose. Our vision is to raise a strong Canadian Muslim generation, rooted in faith, confident in identity, and prepared to fulfill their role of khilāfah on earth by leading with integrity and serving humanity with impact.
+                                        </p>
+                                        <p class="mt-2 text-muted fst-italic fw-semibold">
+                                            At Fitra, we are nurturing thinkers, leaders, and caretakers of the world, inshaAllah.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end founder-section -->
+
         <!-- start our-team-section -->
         <section class="pt-100 pb-100">
             <div class="container">
