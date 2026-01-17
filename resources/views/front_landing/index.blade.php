@@ -617,12 +617,12 @@ $brands = brands();
                         @foreach($data['events'] as $event)
                             @if($event->status == App\Models\Event::PUBLISHED)
                                 <div class="col-xl-4 col-lg-6 col-12 mb-2">
-                                    <div class="card h-100">
+                                    <div class="card">
                                         <div class="positon-relative">
-                                            <div class="card-img">
+                                            <div>
                                                 <a href="{{ route('landing.event.detail',$event->slug) }}">
                                                     <img src="{{ !empty($event->image_url) ? $event->image_url : asset('front_landing/images/events-1.png') }}"
-                                                        class="card-img-top object-fit-cover" alt="card">
+                                                        class="w-100 h-100 card-img-top object-fit-cover" alt="card">
                                                 </a>
                                             </div>
                                             <div class="small-btn d-flex flex-column justify-content-center align-items-center">
