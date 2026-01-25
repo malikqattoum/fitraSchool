@@ -143,7 +143,11 @@ class EventController extends AppBaseController
 
         // Extracted link or null if not found
         $link = $matches[0] ?? null;
-        return view('front_landing.events_detail', compact('event', 'link'));
+
+        // Pass the event_organizer_website to the view
+        $organizerWebsite = $event->event_organizer_website;
+
+        return view('front_landing.events_detail', compact('event', 'link', 'organizerWebsite'));
     }
 
     /**

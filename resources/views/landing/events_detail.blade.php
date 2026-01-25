@@ -79,6 +79,16 @@
                                         <p>{{ $event->event_organizer_phone ? $event->event_organizer_phone : 'N/A' }}</p>
                                     </div>
                                 </div>
+                                @if($event->event_organizer_website)
+                                <div class="single-address-info d-flex align-items-center">
+                                    <div class="icon icon2">
+                                        <a href="{{ $event->event_organizer_website }}" target="_blank"><i class="fal fa-link"></i></a>
+                                    </div>
+                                    <div class="address">
+                                        <p><a href="{{ $event->event_organizer_website }}" target="_blank">{{ $event->event_organizer_website }}</a></p>
+                                    </div>
+                                </div>
+                                @endif
                                 <div class="single-address-info d-flex align-items-center">
                                     <div class="icon icon2" id="availableSeat">
                                         <p>  {{ $event->available_tickets }}</p>

@@ -48,6 +48,15 @@
                                     {{ strlen( $event->description ) > 100 ? substr($event->description,0, 200).'.....': $event->description }}
                                 </p>
 
+                                @if(!empty($event->event_organizer_website))
+                                    <div class="mt-2">
+                                        <i class="fa-solid fa-globe text-primary me-2"></i>
+                                        <a href="{{ $event->event_organizer_website }}" target="_blank" class="fs-16 fw-5 text-primary">
+                                            Organizer Website
+                                        </a>
+                                    </div>
+                                @endif
+
                             </div>
                         </div>
                     </div>

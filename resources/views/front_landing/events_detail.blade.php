@@ -59,7 +59,14 @@
                                 <a href="tel:{{ $event->event_organizer_phone }}"
                                    class="fs-16 fw-5 text-dark mb-0">{{ $event->event_organizer_phone ? $event->event_organizer_phone : 'N/A' }}</a>
                             </div>
-                            @if($link)
+                            @if($organizerWebsite)
+                                <div class="d-flex flex-wrap  align-items-center mb-3 pb-1">
+                                    <div class="icon rounded-10 d-flex justify-content-center align-items-center me-3">
+                                        <i class="fa-solid fa-link text-primary "></i>
+                                    </div>
+                                    <a class="fs-16 fw-5 text-dark mb-0" href="{{ $organizerWebsite }}" target="_blank">{{ $organizerWebsite }}</a>
+                                </div>
+                            @elseif($link)
                                 <div class="d-flex flex-wrap  align-items-center mb-3 pb-1">
                                     <div class="icon rounded-10 d-flex justify-content-center align-items-center me-3">
                                         <i class="fa-solid fa-link text-primary "></i>
